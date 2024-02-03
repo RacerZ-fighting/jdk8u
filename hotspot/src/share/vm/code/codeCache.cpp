@@ -889,14 +889,15 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
     {
       // test for hash consistency
       // debug
-      // printf("[debug1] %s - %s\n",
-      //        old_method->method_holder()->external_name(),
-      //        old_method->name_and_sig_as_C_string());
+      printf("[debug1] %s - %s\n",
+             old_method->method_holder()->external_name(),
+             old_method->name_and_sig_as_C_string());
       nm->mark_for_deoptimization();
       number_of_marked_CodeBlobs++;
     }
   }
-  // TODO: 这里 24 是待退优化的方法数量
+TODO:
+  // 这里 24 是待退优化的方法数量
   for (int j = 0; j < 24; ++j)
   {
     redefineClass = dependee->external_name();
@@ -907,12 +908,15 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
         uintptr_t cur_hash = test_e[q];
         Method *test_dep = (Method *)cur_hash;
         nmethod *nm = test_dep->code();
+        ResourceMark rm;
         if (typeid(*test_dep) == typeid(Method) && nm != NULL && !nm->is_marked_for_deoptimization())
         {
-          // printf("[success] %s - %s\n", redefineClass,
-          //        test_dep->name_and_sig_as_C_string());
+          printf("[debug1] %s - %s\n", redefineClass,
+                 test_dep->name_and_sig_as_C_string());
           // mark for deoptimization
           // TODO: 这里退优化时也需要去重判断，可以通过 number_of_marked_CodeBlobs 来判断退优化数量
+          nm->mark_for_deoptimization();
+          number_of_marked_CodeBlobs++;
         }
       }
       // TODO: 也许需要加锁 reset
@@ -921,24 +925,25 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
     }
   }
 
-  FOR_ALL_ALIVE_NMETHODS(nm)
-  {
-    if (nm->is_marked_for_deoptimization())
-    {
-      // ...Already marked in the previous pass; don't count it again.
-    }
-    else if (nm->is_evol_dependent_on(dependee(), h, e, ne))
-    {
-      ResourceMark rm;
-      nm->mark_for_deoptimization();
-      number_of_marked_CodeBlobs++;
-    }
-    else
-    {
-      // flush caches in case they refer to a redefined Method*
-      nm->clear_inline_caches();
-    }
-  }
+  // TODO: 这里虽然全部注释掉，也要考虑内联如何处理
+  // FOR_ALL_ALIVE_NMETHODS(nm)
+  // {
+  //   if (nm->is_marked_for_deoptimization())
+  //   {
+  //     // ...Already marked in the previous pass; don't count it again.
+  //   }
+  //   else if (nm->is_evol_dependent_on(dependee(), h, e, ne))
+  //   {
+  //     ResourceMark rm;
+  //     nm->mark_for_deoptimization();
+  //     number_of_marked_CodeBlobs++;
+  //   }
+  //   else
+  //   {
+  //     // flush caches in case they refer to a redefined Method*
+  //     nm->clear_inline_caches();
+  //   }
+  // }
 
   return number_of_marked_CodeBlobs;
 }
