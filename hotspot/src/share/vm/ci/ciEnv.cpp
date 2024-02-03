@@ -73,40 +73,30 @@ int test_h[TEST_SIZE] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
 int test_ne[TEST_N], test_idx = 0;
 uintptr_t test_e[TEST_N];
 
-std::string test_data[] = {
-    "java.io.RandomAccessFile",
-    "sun.net.www.protocol.http.HttpURLConnection",
-    "org.apache.catalina.connector.OutputBuffer",
-    "org.apache.catalina.connector.CoyoteAdapter",
-    "org.apache.http.impl.client.DefaultRedirectStrategy",
-    "org.apache.coyote.Response",
-    "org.apache.catalina.connector.CoyoteReader",
-    "org.dom4j.io.SAXReader",
-    "org.apache.catalina.connector.InputBuffer",
-    "org.apache.catalina.connector.Request",
-    "org.apache.xerces.impl.XMLEntityManager",
-    "com.sun.jndi.toolkit.url.GenericURLContext",
-    "java.io.FileOutputStream",
-    "org.apache.http.impl.client.CloseableHttpClient",
-    "com.ctc.wstx.stax.WstxInputFactory",
-    "org.apache.xerces.util.XMLEntityDescriptionImpl",
-    "org.apache.catalina.core.ApplicationFilterChain",
-    "org.sqlite.JDBC",
-    "java.net.InetAddress",
-    "org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser",
-    "com.ctc.wstx.sr.StreamScanner",
-    "java.io.ObjectInputStream",
-    "org.apache.catalina.Server",
-    "org.sqlite.jdbc3.JDBC3Statement",
-    "java.io.File",
-    "ognl.OgnlParser",
-    "java.io.FileInputStream",
-    "java.lang.ClassLoader$NativeLibrary",
-    "org.sqlite.jdbc4.JDBC4Connection",
-    "java.nio.file.Files",
-    "okhttp3.internal.http.RealInterceptorChain",
-    "java.lang.UNIXProcess",
-    "java.lang.ClassLoader"};
+std::string test_data[] = {"org.apache.http.impl.client.CloseableHttpClient",
+                           "okhttp3.internal.http.RealInterceptorChain",
+                           "org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser",
+                           "org.dom4j.io.SAXReader",
+                           "org.apache.xerces.util.XMLEntityDescriptionImpl",
+                           "org.apache.xerces.impl.XMLEntityManager",
+                           "org.sqlite.jdbc3.JDBC3Statement",
+                           "com.ctc.wstx.sr.StreamScanner",
+                           "org.apache.catalina.core.ApplicationFilterChain",
+                           "org.apache.catalina.connector.OutputBuffer",
+                           "org.apache.catalina.connector.InputBuffer",
+                           "org.apache.catalina.connector.Request",
+                           "org.apache.catalina.connector.CoyoteAdapter",
+                           "org.apache.coyote.Response",
+                           "sun.net.www.protocol.http.HttpURLConnection",
+                           "java.lang.UNIXProcess",
+                           "java.io.RandomAccessFile",
+                           "java.nio.file.Files",
+                           "java.net.InetAddress",
+                           "java.io.ObjectInputStream",
+                           "java.io.FileOutputStream",
+                           "java.io.FileInputStream",
+                           "java.io.File",
+                           "java.lang.ClassLoader"};
 // This class is the top level broker for requests from the compiler
 // to the VM.
 
@@ -1276,7 +1266,7 @@ void ciEnv::register_method(ciMethod *target,
           Method *dep_method = deps.method_argument(0);
           // dep_method->method_holder()->external_name()
           // TODO: 这里面 33 对应的是待退优化的类数量
-          for (int i = 0; i < 33; ++i)
+          for (int i = 0; i < 24; ++i)
           {
             if (std::strcmp(dep_method->method_holder()->external_name(), test_data[i].c_str()) == 0)
             {
@@ -1291,6 +1281,8 @@ void ciEnv::register_method(ciMethod *target,
                 uintptr_t hash = nm->method()->identity_hash();
                 // 将 i 作为下标索引值
                 // printf("[debug] %s\n", dep_method->name_and_sig_as_C_string());
+                // printf("[success] %s - %s\n", dep_method->method_holder()->external_name(),
+                //        nm->method()->name_and_sig_as_C_string());
                 test_e[test_idx] = hash;
                 test_ne[test_idx] = test_h[i];
                 test_h[i] = test_idx;

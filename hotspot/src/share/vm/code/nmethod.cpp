@@ -2936,9 +2936,9 @@ bool nmethod::is_evol_dependent_on(Klass *dependee, int h[], uintptr_t e[], int 
         if (e[i] == hash)
         {
           // debug
-          printf("[debug1] %s - %s\n",
-                 method->method_holder()->external_name(),
-                 _method->name_and_sig_as_C_string());
+          // printf("[debug1] %s - %s\n",
+          //        method->method_holder()->external_name(),
+          //        _method->name_and_sig_as_C_string());
           return true;
         }
       }

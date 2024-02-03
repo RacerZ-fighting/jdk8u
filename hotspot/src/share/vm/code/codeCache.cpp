@@ -58,40 +58,30 @@ const int N = 487;
 int h[N], ne[N], idx;
 uintptr_t e[N];
 //
-std::string test_result[] = {
-    "java.io.RandomAccessFile",
-    "sun.net.www.protocol.http.HttpURLConnection",
-    "org.apache.catalina.connector.OutputBuffer",
-    "org.apache.catalina.connector.CoyoteAdapter",
-    "org.apache.http.impl.client.DefaultRedirectStrategy",
-    "org.apache.coyote.Response",
-    "org.apache.catalina.connector.CoyoteReader",
-    "org.dom4j.io.SAXReader",
-    "org.apache.catalina.connector.InputBuffer",
-    "org.apache.catalina.connector.Request",
-    "org.apache.xerces.impl.XMLEntityManager",
-    "com.sun.jndi.toolkit.url.GenericURLContext",
-    "java.io.FileOutputStream",
-    "org.apache.http.impl.client.CloseableHttpClient",
-    "com.ctc.wstx.stax.WstxInputFactory",
-    "org.apache.xerces.util.XMLEntityDescriptionImpl",
-    "org.apache.catalina.core.ApplicationFilterChain",
-    "org.sqlite.JDBC",
-    "java.net.InetAddress",
-    "org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser",
-    "com.ctc.wstx.sr.StreamScanner",
-    "java.io.ObjectInputStream",
-    "org.apache.catalina.Server",
-    "org.sqlite.jdbc3.JDBC3Statement",
-    "java.io.File",
-    "ognl.OgnlParser",
-    "java.io.FileInputStream",
-    "java.lang.ClassLoader$NativeLibrary",
-    "org.sqlite.jdbc4.JDBC4Connection",
-    "java.nio.file.Files",
-    "okhttp3.internal.http.RealInterceptorChain",
-    "java.lang.UNIXProcess",
-    "java.lang.ClassLoader"};
+std::string test_result[] = {"org.apache.http.impl.client.CloseableHttpClient",
+                             "okhttp3.internal.http.RealInterceptorChain",
+                             "org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser",
+                             "org.dom4j.io.SAXReader",
+                             "org.apache.xerces.util.XMLEntityDescriptionImpl",
+                             "org.apache.xerces.impl.XMLEntityManager",
+                             "org.sqlite.jdbc3.JDBC3Statement",
+                             "com.ctc.wstx.sr.StreamScanner",
+                             "org.apache.catalina.core.ApplicationFilterChain",
+                             "org.apache.catalina.connector.OutputBuffer",
+                             "org.apache.catalina.connector.InputBuffer",
+                             "org.apache.catalina.connector.Request",
+                             "org.apache.catalina.connector.CoyoteAdapter",
+                             "org.apache.coyote.Response",
+                             "sun.net.www.protocol.http.HttpURLConnection",
+                             "java.lang.UNIXProcess",
+                             "java.io.RandomAccessFile",
+                             "java.nio.file.Files",
+                             "java.net.InetAddress",
+                             "java.io.ObjectInputStream",
+                             "java.io.FileOutputStream",
+                             "java.io.FileInputStream",
+                             "java.io.File",
+                             "java.lang.ClassLoader"};
 
 // Helper class for printing in CodeCache
 
@@ -877,7 +867,6 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
 {
   MutexLockerEx mu(CodeCache_lock, Mutex::_no_safepoint_check_flag);
   int number_of_marked_CodeBlobs = 0;
-
   // printf("[*] CodeCache::mark_for_evol_deoptimization\n");
 
   memset(h, -1, sizeof h);
@@ -891,7 +880,6 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
     ResourceMark rm;
     Method *old_method = old_methods->at(i);
     uintptr_t hash = old_method->identity_hash();
-    redefineClass = old_method->method_holder()->external_name();
 
     insert(hash);
     // printf("[debug1] %s\n", old_method->method_holder()->external_name());
@@ -908,25 +896,27 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
       number_of_marked_CodeBlobs++;
     }
   }
-  // TODO: 这里 33 是待退优化的方法数量
-  for (int i = 0; i < 33; ++i)
+  // TODO: 这里 24 是待退优化的方法数量
+  for (int j = 0; j < 24; ++j)
   {
-    if (std::strcmp(redefineClass, test_result[i].c_str()) == 0)
+    redefineClass = dependee->external_name();
+    if (std::strcmp(redefineClass, test_result[j].c_str()) == 0)
     {
-      for (int q = test_h[i]; q != -1; q = test_ne[q])
+      for (int q = test_h[j]; q != -1; q = test_ne[q])
       {
         uintptr_t cur_hash = test_e[q];
         Method *test_dep = (Method *)cur_hash;
-        if (typeid(*test_dep) == typeid(Method) && test_dep->code() != NULL)
+        nmethod *nm = test_dep->code();
+        if (typeid(*test_dep) == typeid(Method) && nm != NULL && !nm->is_marked_for_deoptimization())
         {
-          printf("[success] %s - %s\n", redefineClass,
-                 test_dep->name_and_sig_as_C_string());
+          // printf("[success] %s - %s\n", redefineClass,
+          //        test_dep->name_and_sig_as_C_string());
           // mark for deoptimization
           // TODO: 这里退优化时也需要去重判断，可以通过 number_of_marked_CodeBlobs 来判断退优化数量
         }
       }
       // TODO: 也许需要加锁 reset
-      test_h[i] = -1;
+      test_h[j] = -1;
       break;
     }
   }
