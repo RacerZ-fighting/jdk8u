@@ -38,7 +38,7 @@ public:
   NOT_PRODUCT(Metadata() { _valid = 0; })
   NOT_PRODUCT(bool is_valid() const volatile { return _valid == 0; })
   // TODO: 直接取地址
-  uintptr_t identity_hash() { return (uintptr_t)this; }
+  int identity_hash() { return (int)(uintptr_t)this; }
 
   // Rehashing support for tables containing pointers to this
   unsigned int new_hash(juint seed)

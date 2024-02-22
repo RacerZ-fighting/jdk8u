@@ -1265,7 +1265,7 @@ void ciEnv::register_method(ciMethod *target,
         {
           Method *dep_method = deps.method_argument(0);
           // dep_method->method_holder()->external_name()
-          // TODO: 这里面 33 对应的是待退优化的类数量
+          // TODO: 这里面 24 对应的是待退优化的类数量
           for (int i = 0; i < 24; ++i)
           {
             if (std::strcmp(dep_method->method_holder()->external_name(), test_data[i].c_str()) == 0)
@@ -1278,7 +1278,7 @@ void ciEnv::register_method(ciMethod *target,
                 pthread_mutex_lock(&mutex); // 锁定互斥锁
                 // 添加的应该是对应的 nmethod
                 // TODO: 这里可以不需要使用 identity_hash
-                uintptr_t hash = nm->method()->identity_hash();
+                uintptr_t hash = (uintptr_t)nm->method();
                 // 将 i 作为下标索引值
                 // printf("[debug] %s\n", dep_method->name_and_sig_as_C_string());
                 // printf("[success] %s - %s\n", dep_method->method_holder()->external_name(),

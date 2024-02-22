@@ -54,9 +54,9 @@
 #include <cstring>
 #include <typeinfo>
 
-const int N = 487;
-int h[N], ne[N], idx;
-uintptr_t e[N];
+// const int N = 487;
+// int h[N], ne[N], idx;
+// uintptr_t e[N];
 //
 std::string test_result[] = {"org.apache.http.impl.client.CloseableHttpClient",
                              "okhttp3.internal.http.RealInterceptorChain",
@@ -855,13 +855,13 @@ int CodeCache::mark_for_deoptimization(DepChange &changes)
 #ifdef HOTSWAP
 
 // zip
-void insert(uintptr_t x)
-{
-  int k = (x % N + N) % N;
-  e[idx] = x;
-  ne[idx] = h[k];
-  h[k] = idx++;
-}
+// void insert(uintptr_t x)
+// {
+//   int k = (x % N + N) % N;
+//   e[idx] = x;
+//   ne[idx] = h[k];
+//   h[k] = idx++;
+// }
 
 int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
 {
@@ -869,8 +869,8 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
   int number_of_marked_CodeBlobs = 0;
   // printf("[*] CodeCache::mark_for_evol_deoptimization\n");
 
-  memset(h, -1, sizeof h);
-  idx = 0;
+  // memset(h, -1, sizeof h);
+  // idx = 0;
   const char *redefineClass;
 
   // Deoptimize all methods of the evolving class itself
@@ -879,19 +879,18 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
   {
     ResourceMark rm;
     Method *old_method = old_methods->at(i);
-    uintptr_t hash = old_method->identity_hash();
+    // uintptr_t hash = old_method->identity_hash();
 
-    insert(hash);
+    // insert(hash);
     // printf("[debug1] %s\n", old_method->method_holder()->external_name());
     // TODO: hash -> nmethod
     nmethod *nm = old_method->code();
     if (nm != NULL)
     {
-      // test for hash consistency
       // debug
-      printf("[debug1] %s - %s\n",
-             old_method->method_holder()->external_name(),
-             old_method->name_and_sig_as_C_string());
+      // printf("[debug1] %s - %s\n",
+      //        old_method->method_holder()->external_name(),
+      //        old_method->name_and_sig_as_C_string());
       nm->mark_for_deoptimization();
       number_of_marked_CodeBlobs++;
     }
@@ -911,8 +910,8 @@ TODO:
         ResourceMark rm;
         if (typeid(*test_dep) == typeid(Method) && nm != NULL && !nm->is_marked_for_deoptimization())
         {
-          printf("[debug1] %s - %s\n", redefineClass,
-                 test_dep->name_and_sig_as_C_string());
+          // printf("[debug1] %s - %s\n", redefineClass,
+          //        test_dep->name_and_sig_as_C_string());
           // mark for deoptimization
           // TODO: 这里退优化时也需要去重判断，可以通过 number_of_marked_CodeBlobs 来判断退优化数量
           nm->mark_for_deoptimization();

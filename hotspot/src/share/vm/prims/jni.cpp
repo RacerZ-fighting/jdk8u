@@ -272,7 +272,7 @@ bool jfieldIDWorkaround::klass_hash_ok(Klass *k, jfieldID id)
   {
     debug_only(No_Safepoint_Verifier nosafepoint;)
         // Could use a non-blocking query for identity_hash here...
-        if ((((int)k->identity_hash()) & klass_mask) == klass_hash) return true;
+        if ((k->identity_hash() & klass_mask) == klass_hash) return true;
     k = k->super();
   } while (k != NULL);
   return false;
