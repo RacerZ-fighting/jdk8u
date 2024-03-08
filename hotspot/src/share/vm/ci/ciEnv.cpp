@@ -68,12 +68,13 @@
 // init
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 const int TEST_N = 4000;
-const int TEST_SIZE = 40;
-int test_h[TEST_SIZE] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
+const int TEST_SIZE = 43;
+int test_h[TEST_SIZE] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
 int test_ne[TEST_N], test_idx = 0;
 uintptr_t test_e[TEST_N];
-
+/* class level */
 std::string test_data[] = {"org.apache.http.impl.client.CloseableHttpClient",
+                           /* class level */
                            "okhttp3.internal.http.RealInterceptorChain",
                            "org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser",
                            "org.dom4j.io.SAXReader",
@@ -97,6 +98,48 @@ std::string test_data[] = {"org.apache.http.impl.client.CloseableHttpClient",
                            "java.io.FileInputStream",
                            "java.io.File",
                            "java.lang.ClassLoader"};
+/* method level */
+std::string test_method[] = {"com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljava/io/File;)Lorg/codehaus/stax2/XMLStreamReader2;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljava/io/InputStream;)Ljavax/xml/stream/XMLStreamReader;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljava/io/InputStream;Ljava/lang/String;)Ljavax/xml/stream/XMLStreamReader;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljava/io/Reader;)Ljavax/xml/stream/XMLStreamReader;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljava/lang/String;Ljava/io/InputStream;)Ljavax/xml/stream/XMLStreamReader;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljava/lang/String;Ljava/io/Reader;)Ljavax/xml/stream/XMLStreamReader;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljavax/xml/transform/Source;)Ljavax/xml/stream/XMLStreamReader;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljava/net/URL;)Lorg/codehaus/stax2/XMLStreamReader2;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljava/io/InputStream;)Ljavax/xml/stream/XMLEventReader;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljava/io/InputStream;Ljava/lang/String;)Ljavax/xml/stream/XMLEventReader;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljava/io/Reader;)Ljavax/xml/stream/XMLEventReader;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljavax/xml/transform/Source;)Ljavax/xml/stream/XMLEventReader;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljava/lang/String;Ljava/io/InputStream;)Ljavax/xml/stream/XMLEventReader;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljava/lang/String;Ljava/io/Reader;)Ljavax/xml/stream/XMLEventReader;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljavax/xml/stream/XMLStreamReader;)Ljavax/xml/stream/XMLEventReader;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljava/io/File;)Lorg/codehaus/stax2/XMLEventReader2;",
+                             "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljava/net/URL;)Lorg/codehaus/stax2/XMLEventReader2;",
+                             "java.io.File.delete()Z",
+                             "java.io.File.list()[Ljava/lang/String;",
+                             "java.io.File.renameTo(Ljava/io/File;)Z",
+                             "java.io.FileInputStream.<init>(Ljava/io/File;)V",
+                             "java.io.FileOutputStream.<init>(Ljava/io/File;Z)V",
+                             "java.io.ObjectInputStream.resolveClass(Ljava/io/ObjectStreamClass;)Ljava/lang/Class;",
+                             "java.lang.ClassLoader$NativeLibrary.<init>(Ljava/lang/Class;Ljava/lang/String;Z)V",
+                             "java.lang.ClassLoader.loadLibrary0(Ljava/lang/Class;Ljava/io/File;)Z",
+                             "java.nio.file.Files.newInputStream(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/InputStream;",
+                             "java.lang.UNIXProcess.<init>([B[BI[BI[B[IZ)V",
+                             "java.net.InetAddress.getAllByName(Ljava/lang/String;)[Ljava/net/InetAddress;",
+                             "java.nio.file.Files.copy(Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;",
+                             "java.nio.file.Files.createFile(Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/file/Path;",
+                             "java.nio.file.Files.createLink(Ljava/nio/file/Path;Ljava/nio/file/Path;)Ljava/nio/file/Path;",
+                             "java.nio.file.Files.delete(Ljava/nio/file/Path;)V",
+                             "java.nio.file.Files.deleteIfExists(Ljava/nio/file/Path;)Z",
+                             "java.nio.file.Files.move(Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;",
+                             "java.nio.file.Files.newInputStream(Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/io/InputStream;",
+                             "java.nio.file.Files.newOutputStream(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/OutputStream;",
+                             "java.nio.file.Files.readAllBytes(Ljava/nio/file/Path;)[B",
+                             "org.apache.catalina.connector.CoyoteAdapter.service(Lorg/apache/coyote/Request;Lorg/apache/coyote/Response;)V",
+                             "org.apache.coyote.Response.doWrite(Ljava/nio/ByteBuffer;)V",
+                             "org.sqlite.JDBC.connect(Ljava/lang/String;Ljava/util/Properties;)Ljava/sql/Connection;",
+                             "org.sqlite.jdbc4.JDBC4Connection.prepareStatement(Ljava/lang/String;III)Ljava/sql/PreparedStatement;"};
 // This class is the top level broker for requests from the compiler
 // to the VM.
 
@@ -1264,39 +1307,33 @@ void ciEnv::register_method(ciMethod *target,
         if (deps.type() == Dependencies::evol_method)
         {
           Method *dep_method = deps.method_argument(0);
-          // dep_method->method_holder()->external_name()
-          // TODO: 这里面 24 对应的是待退优化的类数量
-          for (int i = 0; i < 24; ++i)
+          // 这里面 41 对应的是待退优化的桩点数量
           {
-            if (std::strcmp(dep_method->method_holder()->external_name(), test_data[i].c_str()) == 0)
-            {
-              // printf("[debug] %s ---> %s\n",
-              //        dep_method->name_and_sig_as_C_string(),
-              //        test_data[i].c_str());
-              // TODO: 这里需要保证操作的原子性，否则会出现 test_idx 以及 test_h[i] 指向错乱
+            for (int i = 0; i < 41; ++i)
+              if (std::strcmp(dep_method->name_and_sig_as_C_string(), test_method[i].c_str()) == 0)
               {
-                pthread_mutex_lock(&mutex); // 锁定互斥锁
-                // 添加的应该是对应的 nmethod
-                // TODO: 这里可以不需要使用 identity_hash
-                uintptr_t hash = (uintptr_t)nm->method();
-                // 将 i 作为下标索引值
-                // printf("[debug] %s\n", dep_method->name_and_sig_as_C_string());
-                // printf("[success] %s - %s\n", dep_method->method_holder()->external_name(),
-                //        nm->method()->name_and_sig_as_C_string());
-                test_e[test_idx] = hash;
-                test_ne[test_idx] = test_h[i];
-                test_h[i] = test_idx;
-                test_idx += 1;
-                if (test_idx == TEST_N)
+                // 这里需要保证操作的原子性，否则会出现 test_idx 以及 test_h[i] 指向错乱
                 {
-                  printf("[error] test_idx overflow!\n");
-                  test_idx = 0;
-                }
+                  pthread_mutex_lock(&mutex);
+                  // 添加的应该是对应的 nmethod
+                  uintptr_t hash = (uintptr_t)nm->method();
+                  // printf("[debug] %s\n", dep_method->c());
+                  // printf("[success] %s - %s\n", dep_method->method_holder()->external_name(),
+                  //        nm->method()->name_and_sig_as_C_string());
+                  test_e[test_idx] = hash;
+                  test_ne[test_idx] = test_h[i];
+                  test_h[i] = test_idx;
+                  test_idx += 1;
+                  if (test_idx == TEST_N)
+                  {
+                    printf("[error] test_idx overflow!\n");
+                    test_idx = 0;
+                  }
 
-                // 解锁互斥锁
-                pthread_mutex_unlock(&mutex);
+                  pthread_mutex_unlock(&mutex);
+                  break;
+                }
               }
-            }
           }
         }
       }

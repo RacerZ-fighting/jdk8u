@@ -57,7 +57,7 @@
 // const int N = 487;
 // int h[N], ne[N], idx;
 // uintptr_t e[N];
-//
+/* class level */
 std::string test_result[] = {"org.apache.http.impl.client.CloseableHttpClient",
                              "okhttp3.internal.http.RealInterceptorChain",
                              "org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser",
@@ -83,6 +83,48 @@ std::string test_result[] = {"org.apache.http.impl.client.CloseableHttpClient",
                              "java.io.File",
                              "java.lang.ClassLoader"};
 
+/* method level */
+std::string test_result_method[] = {"com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljava/io/File;)Lorg/codehaus/stax2/XMLStreamReader2;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljava/io/InputStream;)Ljavax/xml/stream/XMLStreamReader;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljava/io/InputStream;Ljava/lang/String;)Ljavax/xml/stream/XMLStreamReader;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljava/io/Reader;)Ljavax/xml/stream/XMLStreamReader;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljava/lang/String;Ljava/io/InputStream;)Ljavax/xml/stream/XMLStreamReader;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljava/lang/String;Ljava/io/Reader;)Ljavax/xml/stream/XMLStreamReader;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljavax/xml/transform/Source;)Ljavax/xml/stream/XMLStreamReader;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLStreamReader(Ljava/net/URL;)Lorg/codehaus/stax2/XMLStreamReader2;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljava/io/InputStream;)Ljavax/xml/stream/XMLEventReader;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljava/io/InputStream;Ljava/lang/String;)Ljavax/xml/stream/XMLEventReader;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljava/io/Reader;)Ljavax/xml/stream/XMLEventReader;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljavax/xml/transform/Source;)Ljavax/xml/stream/XMLEventReader;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljava/lang/String;Ljava/io/InputStream;)Ljavax/xml/stream/XMLEventReader;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljava/lang/String;Ljava/io/Reader;)Ljavax/xml/stream/XMLEventReader;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljavax/xml/stream/XMLStreamReader;)Ljavax/xml/stream/XMLEventReader;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljava/io/File;)Lorg/codehaus/stax2/XMLEventReader2;",
+                                    "com.ctc.wstx.stax.WstxInputFactory.createXMLEventReader(Ljava/net/URL;)Lorg/codehaus/stax2/XMLEventReader2;",
+                                    "java.io.File.delete()Z",
+                                    "java.io.File.list()[Ljava/lang/String;",
+                                    "java.io.File.renameTo(Ljava/io/File;)Z",
+                                    "java.io.FileInputStream.<init>(Ljava/io/File;)V",
+                                    "java.io.FileOutputStream.<init>(Ljava/io/File;Z)V",
+                                    "java.io.ObjectInputStream.resolveClass(Ljava/io/ObjectStreamClass;)Ljava/lang/Class;",
+                                    "java.lang.ClassLoader$NativeLibrary.<init>(Ljava/lang/Class;Ljava/lang/String;Z)V",
+                                    "java.lang.ClassLoader.loadLibrary0(Ljava/lang/Class;Ljava/io/File;)Z",
+                                    "java.nio.file.Files.newInputStream(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/InputStream;",
+                                    "java.lang.UNIXProcess.<init>([B[BI[BI[B[IZ)V",
+                                    "java.net.InetAddress.getAllByName(Ljava/lang/String;)[Ljava/net/InetAddress;",
+                                    "java.nio.file.Files.copy(Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;",
+                                    "java.nio.file.Files.createFile(Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/file/Path;",
+                                    "java.nio.file.Files.createLink(Ljava/nio/file/Path;Ljava/nio/file/Path;)Ljava/nio/file/Path;",
+                                    "java.nio.file.Files.delete(Ljava/nio/file/Path;)V",
+                                    "java.nio.file.Files.deleteIfExists(Ljava/nio/file/Path;)Z",
+                                    "java.nio.file.Files.move(Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;",
+                                    "java.nio.file.Files.newInputStream(Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/io/InputStream;",
+                                    "java.nio.file.Files.newOutputStream(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/OutputStream;",
+                                    "java.nio.file.Files.readAllBytes(Ljava/nio/file/Path;)[B",
+                                    "org.apache.catalina.connector.CoyoteAdapter.service(Lorg/apache/coyote/Request;Lorg/apache/coyote/Response;)V",
+                                    "org.apache.coyote.Response.doWrite(Ljava/nio/ByteBuffer;)V",
+                                    "org.sqlite.JDBC.connect(Ljava/lang/String;Ljava/util/Properties;)Ljava/sql/Connection;",
+                                    "org.sqlite.jdbc4.JDBC4Connection.prepareStatement(Ljava/lang/String;III)Ljava/sql/PreparedStatement;"};
 // Helper class for printing in CodeCache
 
 class CodeBlob_sizes
@@ -879,50 +921,64 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
   {
     ResourceMark rm;
     Method *old_method = old_methods->at(i);
-    // uintptr_t hash = old_method->identity_hash();
 
-    // insert(hash);
-    // printf("[debug1] %s\n", old_method->method_holder()->external_name());
-    // TODO: hash -> nmethod
-    nmethod *nm = old_method->code();
-    if (nm != NULL)
+    // do method-level deoptimization
+    for (int j = 0; j < 41; ++j)
     {
-      // debug
-      // printf("[debug1] %s - %s\n",
-      //        old_method->method_holder()->external_name(),
-      //        old_method->name_and_sig_as_C_string());
-      nm->mark_for_deoptimization();
-      number_of_marked_CodeBlobs++;
-    }
-  }
-TODO:
-  // 这里 24 是待退优化的方法数量
-  for (int j = 0; j < 24; ++j)
-  {
-    redefineClass = dependee->external_name();
-    if (std::strcmp(redefineClass, test_result[j].c_str()) == 0)
-    {
-      for (int q = test_h[j]; q != -1; q = test_ne[q])
+      if (std::strcmp(old_method->name_and_sig_as_C_string(), test_result_method[j].c_str()) == 0)
       {
-        uintptr_t cur_hash = test_e[q];
-        Method *test_dep = (Method *)cur_hash;
-        nmethod *nm = test_dep->code();
-        ResourceMark rm;
-        if (typeid(*test_dep) == typeid(Method) && nm != NULL && !nm->is_marked_for_deoptimization())
+        nmethod *nm = old_method->code();
+        if (nm != NULL)
         {
-          // printf("[debug1] %s - %s\n", redefineClass,
-          //        test_dep->name_and_sig_as_C_string());
-          // mark for deoptimization
-          // TODO: 这里退优化时也需要去重判断，可以通过 number_of_marked_CodeBlobs 来判断退优化数量
+          // printf("[debug1] %s\n", old_method->name_and_sig_as_C_string());
           nm->mark_for_deoptimization();
           number_of_marked_CodeBlobs++;
         }
+
+        for (int q = test_h[j]; q != -1; q = test_ne[q])
+        {
+          uintptr_t cur_hash = test_e[q];
+          Method *test_dep = (Method *)cur_hash;
+          nmethod *nm_dep = test_dep->code();
+          ResourceMark rm;
+          if (typeid(*test_dep) == typeid(Method) && nm_dep != NULL && !nm_dep->is_marked_for_deoptimization())
+          {
+            // printf("[debug1] %s\n", test_dep->name_and_sig_as_C_string());
+            nm_dep->mark_for_deoptimization();
+            number_of_marked_CodeBlobs++;
+          }
+        }
+        // 也许需要加锁 reset
+        test_h[j] = -1;
       }
-      // TODO: 也许需要加锁 reset
-      test_h[j] = -1;
-      break;
     }
   }
+
+  // 这里 24 是待退优化的方法数量
+  // for (int j = 0; j < 24; ++j)
+  // {
+  //   redefineClass = dependee->external_name();
+  //   if (std::strcmp(redefineClass, test_result[j].c_str()) == 0)
+  //   {
+  //     for (int q = test_h[j]; q != -1; q = test_ne[q])
+  //     {
+  //       uintptr_t cur_hash = test_e[q];
+  //       Method *test_dep = (Method *)cur_hash;
+  //       nmethod *nm = test_dep->code();
+  //       ResourceMark rm;
+  //       if (typeid(*test_dep) == typeid(Method) && nm != NULL && !nm->is_marked_for_deoptimization())
+  //       {
+  //         printf("[debug1] %s\n", test_dep->name_and_sig_as_C_string());
+  //         // 这里退优化时也需要去重判断，可以通过 number_of_marked_CodeBlobs 来判断退优化数量
+  //         nm->mark_for_deoptimization();
+  //         number_of_marked_CodeBlobs++;
+  //       }
+  //     }
+  //     // TODO: 也许需要加锁 reset
+  //     test_h[j] = -1;
+  //     break;
+  //   }
+  // }
 
   // TODO: 这里虽然全部注释掉，也要考虑内联如何处理
   // FOR_ALL_ALIVE_NMETHODS(nm)

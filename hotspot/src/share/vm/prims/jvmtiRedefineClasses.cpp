@@ -3846,6 +3846,7 @@ void VM_RedefineClasses::update_jmethod_ids()
   for (int j = 0; j < _matching_methods_length; ++j)
   {
     Method *old_method = _matching_old_methods[j];
+    // TODO: 这里可能需要调整
     jmethodID jmid = old_method->find_jmethod_id_or_null();
     if (jmid != NULL)
     {

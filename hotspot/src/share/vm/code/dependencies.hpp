@@ -56,12 +56,13 @@ class OopRecorder;
 class xmlStream;
 class CompileLog;
 class DepChange;
-class   KlassDepChange;
-class   CallSiteDepChange;
+class KlassDepChange;
+class CallSiteDepChange;
 class No_Safepoint_Verifier;
 
-class Dependencies: public ResourceObj {
- public:
+class Dependencies : public ResourceObj
+{
+public:
   // Note: In the comments on dependency types, most uses of the terms
   // subtype and supertype are used in a "non-strict" or "inclusive"
   // sense, and are starred to remind the reader of this fact.
@@ -98,7 +99,8 @@ class Dependencies: public ResourceObj {
   // responsible for re-evaluating changed dependencies whose context
   // type now includes N, that is, all super types of N.
   //
-  enum DepType {
+  enum DepType
+  {
     end_marker = 0,
 
     // An 'evol' dependency simply notes that the contents of the
@@ -135,7 +137,7 @@ class Dependencies: public ResourceObj {
     // context class CX.  M1 must be either inherited in CX or defined
     // in a subtype* of CX.  It asserts that MM(CX, M1) is no greater
     // than {M1}.
-    unique_concrete_method,       // one unique concrete method under CX
+    unique_concrete_method, // one unique concrete method under CX
 
     // An "exclusive" assertion concerns two methods or subtypes, and
     // declares that there are at most two (or perhaps later N>2)
@@ -166,20 +168,21 @@ class Dependencies: public ResourceObj {
 
     TYPE_LIMIT
   };
-  enum {
-    LG2_TYPE_LIMIT = 4,  // assert(TYPE_LIMIT <= (1<<LG2_TYPE_LIMIT))
+  enum
+  {
+    LG2_TYPE_LIMIT = 4, // assert(TYPE_LIMIT <= (1<<LG2_TYPE_LIMIT))
 
     // handy categorizations of dependency types:
-    all_types           = ((1 << TYPE_LIMIT) - 1) & ((-1) << FIRST_TYPE),
+    all_types = ((1 << TYPE_LIMIT) - 1) & ((-1) << FIRST_TYPE),
 
-    non_klass_types     = (1 << call_site_target_value),
-    klass_types         = all_types & ~non_klass_types,
+    non_klass_types = (1 << call_site_target_value),
+    klass_types = all_types & ~non_klass_types,
 
-    non_ctxk_types      = (1 << evol_method),
+    non_ctxk_types = (1 << evol_method),
     implicit_ctxk_types = (1 << call_site_target_value),
     explicit_ctxk_types = all_types & ~(non_ctxk_types | implicit_ctxk_types),
 
-    max_arg_count = 3,   // current maximum number of arguments (incl. ctxk)
+    max_arg_count = 3, // current maximum number of arguments (incl. ctxk)
 
     // A "context type" is a class or interface that
     // provides context for evaluating a dependency.
@@ -188,102 +191,109 @@ class Dependencies: public ResourceObj {
     // If a dependency does not have a context type, there is a
     // default context, depending on the type of the dependency.
     // This bit signals that a default context has been compressed away.
-    default_context_type_bit = (1<<LG2_TYPE_LIMIT)
+    default_context_type_bit = (1 << LG2_TYPE_LIMIT)
   };
 
-  static const char* dep_name(DepType dept);
-  static int         dep_args(DepType dept);
+  static const char *dep_name(DepType dept);
+  static int dep_args(DepType dept);
 
-  static bool is_klass_type(           DepType dept) { return dept_in_mask(dept, klass_types        ); }
+  static bool is_klass_type(DepType dept) { return dept_in_mask(dept, klass_types); }
 
   static bool has_explicit_context_arg(DepType dept) { return dept_in_mask(dept, explicit_ctxk_types); }
   static bool has_implicit_context_arg(DepType dept) { return dept_in_mask(dept, implicit_ctxk_types); }
 
-  static int           dep_context_arg(DepType dept) { return has_explicit_context_arg(dept) ? 0 : -1; }
-  static int  dep_implicit_context_arg(DepType dept) { return has_implicit_context_arg(dept) ? 0 : -1; }
+  static int dep_context_arg(DepType dept) { return has_explicit_context_arg(dept) ? 0 : -1; }
+  static int dep_implicit_context_arg(DepType dept) { return has_implicit_context_arg(dept) ? 0 : -1; }
 
   static void check_valid_dependency_type(DepType dept);
 
- private:
+private:
   // State for writing a new set of dependencies:
-  GrowableArray<int>*       _dep_seen;  // (seen[h->ident] & (1<<dept))
-  GrowableArray<ciBaseObject*>*  _deps[TYPE_LIMIT];
+  GrowableArray<int> *_dep_seen; // (seen[h->ident] & (1<<dept))
+  GrowableArray<ciBaseObject *> *_deps[TYPE_LIMIT];
 
-  static const char* _dep_name[TYPE_LIMIT];
-  static int         _dep_args[TYPE_LIMIT];
+  static const char *_dep_name[TYPE_LIMIT];
+  static int _dep_args[TYPE_LIMIT];
 
-  static bool dept_in_mask(DepType dept, int mask) {
-    return (int)dept >= 0 && dept < TYPE_LIMIT && ((1<<dept) & mask) != 0;
+  static bool dept_in_mask(DepType dept, int mask)
+  {
+    return (int)dept >= 0 && dept < TYPE_LIMIT && ((1 << dept) & mask) != 0;
   }
 
-  bool note_dep_seen(int dept, ciBaseObject* x) {
+  bool note_dep_seen(int dept, ciBaseObject *x)
+  {
     assert(dept < BitsPerInt, "oob");
     int x_id = x->ident();
     assert(_dep_seen != NULL, "deps must be writable");
     int seen = _dep_seen->at_grow(x_id, 0);
-    _dep_seen->at_put(x_id, seen | (1<<dept));
+    _dep_seen->at_put(x_id, seen | (1 << dept));
     // return true if we've already seen dept/x
-    return (seen & (1<<dept)) != 0;
+    return (seen & (1 << dept)) != 0;
   }
 
-  bool maybe_merge_ctxk(GrowableArray<ciBaseObject*>* deps,
-                        int ctxk_i, ciKlass* ctxk);
+  bool maybe_merge_ctxk(GrowableArray<ciBaseObject *> *deps,
+                        int ctxk_i, ciKlass *ctxk);
 
   void sort_all_deps();
   size_t estimate_size_in_bytes();
 
   // Initialize _deps, etc.
-  void initialize(ciEnv* env);
+  void initialize(ciEnv *env);
 
   // State for making a new set of dependencies:
-  OopRecorder* _oop_recorder;
+  OopRecorder *_oop_recorder;
 
   // Logging support
-  CompileLog* _log;
+  CompileLog *_log;
 
-  address  _content_bytes;  // everything but the oop references, encoded
-  size_t   _size_in_bytes;
+  address _content_bytes; // everything but the oop references, encoded
+  size_t _size_in_bytes;
 
- public:
+public:
   // Make a new empty dependencies set.
-  Dependencies(ciEnv* env) {
+  Dependencies(ciEnv *env)
+  {
     initialize(env);
   }
 
- private:
+private:
   // Check for a valid context type.
   // Enforce the restriction against array types.
-  static void check_ctxk(ciKlass* ctxk) {
+  static void check_ctxk(ciKlass *ctxk)
+  {
     assert(ctxk->is_instance_klass(), "java types only");
   }
-  static void check_ctxk_concrete(ciKlass* ctxk) {
+  static void check_ctxk_concrete(ciKlass *ctxk)
+  {
     assert(is_concrete_klass(ctxk->as_instance_klass()), "must be concrete");
   }
-  static void check_ctxk_abstract(ciKlass* ctxk) {
+  static void check_ctxk_abstract(ciKlass *ctxk)
+  {
     check_ctxk(ctxk);
     assert(!is_concrete_klass(ctxk->as_instance_klass()), "must be abstract");
   }
-  static void check_unique_implementor(ciInstanceKlass* ctxk, ciInstanceKlass* uniqk) {
+  static void check_unique_implementor(ciInstanceKlass *ctxk, ciInstanceKlass *uniqk)
+  {
     assert(ctxk->implementor() == uniqk, "not a unique implementor");
   }
 
-  void assert_common_1(DepType dept, ciBaseObject* x);
-  void assert_common_2(DepType dept, ciBaseObject* x0, ciBaseObject* x1);
-  void assert_common_3(DepType dept, ciKlass* ctxk, ciBaseObject* x1, ciBaseObject* x2);
+  void assert_common_1(DepType dept, ciBaseObject *x);
+  void assert_common_2(DepType dept, ciBaseObject *x0, ciBaseObject *x1);
+  void assert_common_3(DepType dept, ciKlass *ctxk, ciBaseObject *x1, ciBaseObject *x2);
 
- public:
+public:
   // Adding assertions to a new dependency set at compile time:
-  void assert_evol_method(ciMethod* m);
-  void assert_leaf_type(ciKlass* ctxk);
-  void assert_abstract_with_unique_concrete_subtype(ciKlass* ctxk, ciKlass* conck);
-  void assert_abstract_with_no_concrete_subtype(ciKlass* ctxk);
-  void assert_concrete_with_no_concrete_subtype(ciKlass* ctxk);
-  void assert_unique_concrete_method(ciKlass* ctxk, ciMethod* uniqm);
-  void assert_abstract_with_exclusive_concrete_subtypes(ciKlass* ctxk, ciKlass* k1, ciKlass* k2);
-  void assert_exclusive_concrete_methods(ciKlass* ctxk, ciMethod* m1, ciMethod* m2);
-  void assert_unique_implementor(ciInstanceKlass* ctxk, ciInstanceKlass* uniqk);
-  void assert_has_no_finalizable_subclasses(ciKlass* ctxk);
-  void assert_call_site_target_value(ciCallSite* call_site, ciMethodHandle* method_handle);
+  void assert_evol_method(ciMethod *m);
+  void assert_leaf_type(ciKlass *ctxk);
+  void assert_abstract_with_unique_concrete_subtype(ciKlass *ctxk, ciKlass *conck);
+  void assert_abstract_with_no_concrete_subtype(ciKlass *ctxk);
+  void assert_concrete_with_no_concrete_subtype(ciKlass *ctxk);
+  void assert_unique_concrete_method(ciKlass *ctxk, ciMethod *uniqm);
+  void assert_abstract_with_exclusive_concrete_subtypes(ciKlass *ctxk, ciKlass *k1, ciKlass *k2);
+  void assert_exclusive_concrete_methods(ciKlass *ctxk, ciMethod *m1, ciMethod *m2);
+  void assert_unique_implementor(ciInstanceKlass *ctxk, ciInstanceKlass *uniqk);
+  void assert_has_no_finalizable_subclasses(ciKlass *ctxk);
+  void assert_call_site_target_value(ciCallSite *call_site, ciMethodHandle *method_handle);
 
   // Define whether a given method or type is concrete.
   // These methods define the term "concrete" as used in this module.
@@ -294,12 +304,12 @@ class Dependencies: public ResourceObj {
   // methods to remain non-concrete until their first invocation.
   // In that case, there would be a middle ground between concrete
   // and abstract (as defined by the Java language and VM).
-  static bool is_concrete_klass(Klass* k);    // k is instantiable
-  static bool is_concrete_method(Method* m, Klass* k);  // m is invocable
-  static Klass* find_finalizable_subclass(Klass* k);
+  static bool is_concrete_klass(Klass *k);             // k is instantiable
+  static bool is_concrete_method(Method *m, Klass *k); // m is invocable
+  static Klass *find_finalizable_subclass(Klass *k);
 
-  static bool is_concrete_root_method(Method* uniqm, Klass* ctxk);
-  static Klass* find_witness_AME(Klass* ctxk, Method* m, KlassDepChange* changes = NULL);
+  static bool is_concrete_root_method(Method *uniqm, Klass *ctxk);
+  static Klass *find_witness_AME(Klass *ctxk, Method *m, KlassDepChange *changes = NULL);
 
   // These versions of the concreteness queries work through the CI.
   // The CI versions are allowed to skew sometimes from the VM
@@ -311,8 +321,8 @@ class Dependencies: public ResourceObj {
   // remain stable within any single ciEnv instance.  (I.e., they must
   // not go back into the VM to get their value; they must cache the
   // bit in the CI, either eagerly or lazily.)
-  static bool is_concrete_klass(ciInstanceKlass* k); // k appears instantiable
-  static bool has_finalizable_subclass(ciInstanceKlass* k);
+  static bool is_concrete_klass(ciInstanceKlass *k); // k appears instantiable
+  static bool has_finalizable_subclass(ciInstanceKlass *k);
 
   // As a general rule, it is OK to compile under the assumption that
   // a given type or method is concrete, even if it at some future
@@ -324,23 +334,23 @@ class Dependencies: public ResourceObj {
   // dependency on it must fail.
 
   // Checking old assertions at run-time (in the VM only):
-  static Klass* check_evol_method(Method* m);
-  static Klass* check_leaf_type(Klass* ctxk);
-  static Klass* check_abstract_with_unique_concrete_subtype(Klass* ctxk, Klass* conck,
-                                                              KlassDepChange* changes = NULL);
-  static Klass* check_abstract_with_no_concrete_subtype(Klass* ctxk,
-                                                          KlassDepChange* changes = NULL);
-  static Klass* check_concrete_with_no_concrete_subtype(Klass* ctxk,
-                                                          KlassDepChange* changes = NULL);
-  static Klass* check_unique_implementor(Klass* ctxk, Klass* uniqk, KlassDepChange* changes = NULL);
-  static Klass* check_unique_concrete_method(Klass* ctxk, Method* uniqm,
-                                               KlassDepChange* changes = NULL);
-  static Klass* check_abstract_with_exclusive_concrete_subtypes(Klass* ctxk, Klass* k1, Klass* k2,
-                                                                  KlassDepChange* changes = NULL);
-  static Klass* check_exclusive_concrete_methods(Klass* ctxk, Method* m1, Method* m2,
-                                                   KlassDepChange* changes = NULL);
-  static Klass* check_has_no_finalizable_subclasses(Klass* ctxk, KlassDepChange* changes = NULL);
-  static Klass* check_call_site_target_value(oop call_site, oop method_handle, CallSiteDepChange* changes = NULL);
+  static Klass *check_evol_method(Method *m);
+  static Klass *check_leaf_type(Klass *ctxk);
+  static Klass *check_abstract_with_unique_concrete_subtype(Klass *ctxk, Klass *conck,
+                                                            KlassDepChange *changes = NULL);
+  static Klass *check_abstract_with_no_concrete_subtype(Klass *ctxk,
+                                                        KlassDepChange *changes = NULL);
+  static Klass *check_concrete_with_no_concrete_subtype(Klass *ctxk,
+                                                        KlassDepChange *changes = NULL);
+  static Klass *check_unique_implementor(Klass *ctxk, Klass *uniqk, KlassDepChange *changes = NULL);
+  static Klass *check_unique_concrete_method(Klass *ctxk, Method *uniqm,
+                                             KlassDepChange *changes = NULL);
+  static Klass *check_abstract_with_exclusive_concrete_subtypes(Klass *ctxk, Klass *k1, Klass *k2,
+                                                                KlassDepChange *changes = NULL);
+  static Klass *check_exclusive_concrete_methods(Klass *ctxk, Method *m1, Method *m2,
+                                                 KlassDepChange *changes = NULL);
+  static Klass *check_has_no_finalizable_subclasses(Klass *ctxk, KlassDepChange *changes = NULL);
+  static Klass *check_call_site_target_value(oop call_site, oop method_handle, CallSiteDepChange *changes = NULL);
   // A returned Klass* is NULL if the dependency assertion is still
   // valid.  A non-NULL Klass* is a 'witness' to the assertion
   // failure, a point in the class hierarchy where the assertion has
@@ -356,30 +366,33 @@ class Dependencies: public ResourceObj {
   // It is used by DepStream::spot_check_dependency_at.
 
   // Detecting possible new assertions:
-  static Klass*    find_unique_concrete_subtype(Klass* ctxk);
-  static Method*   find_unique_concrete_method(Klass* ctxk, Method* m);
-  static int       find_exclusive_concrete_subtypes(Klass* ctxk, int klen, Klass* k[]);
+  static Klass *find_unique_concrete_subtype(Klass *ctxk);
+  static Method *find_unique_concrete_method(Klass *ctxk, Method *m);
+  static int find_exclusive_concrete_subtypes(Klass *ctxk, int klen, Klass *k[]);
 
   // Create the encoding which will be stored in an nmethod.
   void encode_content_bytes();
 
-  address content_bytes() {
+  address content_bytes()
+  {
     assert(_content_bytes != NULL, "encode it first");
     return _content_bytes;
   }
-  size_t size_in_bytes() {
+  size_t size_in_bytes()
+  {
     assert(_content_bytes != NULL, "encode it first");
     return _size_in_bytes;
   }
 
-  OopRecorder* oop_recorder() { return _oop_recorder; }
-  CompileLog*  log()          { return _log; }
+  OopRecorder *oop_recorder() { return _oop_recorder; }
+  CompileLog *log() { return _log; }
 
-  void copy_to(nmethod* nm);
+  void copy_to(nmethod *nm);
 
   void log_all_dependencies();
 
-  void log_dependency(DepType dept, GrowableArray<ciBaseObject*>* args) {
+  void log_dependency(DepType dept, GrowableArray<ciBaseObject *> *args)
+  {
     ResourceMark rm;
     int argslen = args->length();
     write_dependency_to(log(), dept, args);
@@ -388,71 +401,86 @@ class Dependencies: public ResourceObj {
   }
 
   void log_dependency(DepType dept,
-                      ciBaseObject* x0,
-                      ciBaseObject* x1 = NULL,
-                      ciBaseObject* x2 = NULL) {
-    if (log() == NULL) {
+                      ciBaseObject *x0,
+                      ciBaseObject *x1 = NULL,
+                      ciBaseObject *x2 = NULL)
+  {
+    if (log() == NULL)
+    {
       return;
     }
     ResourceMark rm;
-    GrowableArray<ciBaseObject*>* ciargs =
-                new GrowableArray<ciBaseObject*>(dep_args(dept));
-    assert (x0 != NULL, "no log x0");
+    GrowableArray<ciBaseObject *> *ciargs =
+        new GrowableArray<ciBaseObject *>(dep_args(dept));
+    assert(x0 != NULL, "no log x0");
     ciargs->push(x0);
 
-    if (x1 != NULL) {
+    if (x1 != NULL)
+    {
       ciargs->push(x1);
     }
-    if (x2 != NULL) {
+    if (x2 != NULL)
+    {
       ciargs->push(x2);
     }
     assert(ciargs->length() == dep_args(dept), "");
     log_dependency(dept, ciargs);
   }
 
-  class DepArgument : public ResourceObj {
-   private:
-    bool  _is_oop;
-    bool  _valid;
-    void* _value;
-   public:
+  class DepArgument : public ResourceObj
+  {
+  private:
+    bool _is_oop;
+    bool _valid;
+    void *_value;
+
+  public:
     DepArgument() : _is_oop(false), _value(NULL), _valid(false) {}
-    DepArgument(oop v): _is_oop(true), _value(v), _valid(true) {}
-    DepArgument(Metadata* v): _is_oop(false), _value(v), _valid(true) {}
+    DepArgument(oop v) : _is_oop(true), _value(v), _valid(true) {}
+    DepArgument(Metadata *v) : _is_oop(false), _value(v), _valid(true) {}
 
-    bool is_null() const               { return _value == NULL; }
-    bool is_oop() const                { return _is_oop; }
-    bool is_metadata() const           { return !_is_oop; }
-    bool is_klass() const              { return is_metadata() && metadata_value()->is_klass(); }
-    bool is_method() const              { return is_metadata() && metadata_value()->is_method(); }
+    bool is_null() const { return _value == NULL; }
+    bool is_oop() const { return _is_oop; }
+    bool is_metadata() const { return !_is_oop; }
+    bool is_klass() const { return is_metadata() && metadata_value()->is_klass(); }
+    bool is_method() const { return is_metadata() && metadata_value()->is_method(); }
 
-    oop oop_value() const              { assert(_is_oop && _valid, "must be"); return (oop) _value; }
-    Metadata* metadata_value() const { assert(!_is_oop && _valid, "must be"); return (Metadata*) _value; }
+    oop oop_value() const
+    {
+      assert(_is_oop && _valid, "must be");
+      return (oop)_value;
+    }
+    Metadata *metadata_value() const
+    {
+      assert(!_is_oop && _valid, "must be");
+      return (Metadata *)_value;
+    }
   };
 
   static void print_dependency(DepType dept,
-                               GrowableArray<DepArgument>* args,
-                               Klass* witness = NULL);
+                               GrowableArray<DepArgument> *args,
+                               Klass *witness = NULL);
 
- private:
+private:
   // helper for encoding common context types as zero:
-  static ciKlass* ctxk_encoded_as_null(DepType dept, ciBaseObject* x);
+  static ciKlass *ctxk_encoded_as_null(DepType dept, ciBaseObject *x);
 
-  static Klass* ctxk_encoded_as_null(DepType dept, Metadata* x);
+  static Klass *ctxk_encoded_as_null(DepType dept, Metadata *x);
 
-  static void write_dependency_to(CompileLog* log,
+  static void write_dependency_to(CompileLog *log,
                                   DepType dept,
-                                  GrowableArray<ciBaseObject*>* args,
-                                  Klass* witness = NULL);
-  static void write_dependency_to(CompileLog* log,
+                                  GrowableArray<ciBaseObject *> *args,
+                                  Klass *witness = NULL);
+  static void write_dependency_to(CompileLog *log,
                                   DepType dept,
-                                  GrowableArray<DepArgument>* args,
-                                  Klass* witness = NULL);
-  static void write_dependency_to(xmlStream* xtty,
+                                  GrowableArray<DepArgument> *args,
+                                  Klass *witness = NULL);
+  static void write_dependency_to(xmlStream *xtty,
                                   DepType dept,
-                                  GrowableArray<DepArgument>* args,
-                                  Klass* witness = NULL);
- public:
+                                  GrowableArray<DepArgument> *args,
+                                  Klass *witness = NULL);
+
+public:
   // Use this to iterate over an nmethod's dependency set.
   // Works on new and old dependency sets.
   // Usage:
@@ -464,118 +492,129 @@ class Dependencies: public ResourceObj {
   // }
   //
   // The caller must be in the VM, since oops are not wrapped in handles.
-  class DepStream {
+  class DepStream
+  {
   private:
-    nmethod*              _code;   // null if in a compiler thread
-    Dependencies*         _deps;   // null if not in a compiler thread
-    CompressedReadStream  _bytes;
+    nmethod *_code;      // null if in a compiler thread
+    Dependencies *_deps; // null if not in a compiler thread
+    CompressedReadStream _bytes;
 #ifdef ASSERT
-    size_t                _byte_limit;
+    size_t _byte_limit;
 #endif
 
     // iteration variables:
-    DepType               _type;
-    int                   _xi[max_arg_count+1];
+    DepType _type;
+    int _xi[max_arg_count + 1];
 
     void initial_asserts(size_t byte_limit) NOT_DEBUG({});
 
-    inline Metadata* recorded_metadata_at(int i);
+    inline Metadata *recorded_metadata_at(int i);
     inline oop recorded_oop_at(int i);
 
-    Klass* check_klass_dependency(KlassDepChange* changes);
-    Klass* check_call_site_dependency(CallSiteDepChange* changes);
+    Klass *check_klass_dependency(KlassDepChange *changes);
+    Klass *check_call_site_dependency(CallSiteDepChange *changes);
 
-    void trace_and_log_witness(Klass* witness);
+    void trace_and_log_witness(Klass *witness);
 
   public:
-    DepStream(Dependencies* deps)
-      : _deps(deps),
-        _code(NULL),
-        _bytes(deps->content_bytes())
+    DepStream(Dependencies *deps)
+        : _deps(deps),
+          _code(NULL),
+          _bytes(deps->content_bytes())
     {
       initial_asserts(deps->size_in_bytes());
     }
-    DepStream(nmethod* code)
-      : _deps(NULL),
-        _code(code),
-        _bytes(code->dependencies_begin())
+    DepStream(nmethod *code)
+        : _deps(NULL),
+          _code(code),
+          _bytes(code->dependencies_begin())
     {
       initial_asserts(code->dependencies_size());
     }
 
     bool next();
 
-    DepType type()               { return _type; }
-    int argument_count()         { return dep_args(type()); }
-    int argument_index(int i)    { assert(0 <= i && i < argument_count(), "oob");
-                                   return _xi[i]; }
-    Metadata* argument(int i);     // => recorded_oop_at(argument_index(i))
-    oop argument_oop(int i);         // => recorded_oop_at(argument_index(i))
-    Klass* context_type();
-
-    bool is_klass_type()         { return Dependencies::is_klass_type(type()); }
-
-    Method* method_argument(int i) {
-      Metadata* x = argument(i);
-      assert(x->is_method(), "type");
-      return (Method*) x;
+    DepType type() { return _type; }
+    int argument_count() { return dep_args(type()); }
+    int argument_index(int i)
+    {
+      assert(0 <= i && i < argument_count(), "oob");
+      return _xi[i];
     }
-    Klass* type_argument(int i) {
-      Metadata* x = argument(i);
+    Metadata *argument(int i); // => recorded_oop_at(argument_index(i))
+    oop argument_oop(int i);   // => recorded_oop_at(argument_index(i))
+    Klass *context_type();
+
+    bool is_klass_type() { return Dependencies::is_klass_type(type()); }
+
+    Method *method_argument(int i)
+    {
+      Metadata *x = argument(i);
+      assert(x->is_method(), "type");
+      return (Method *)x;
+    }
+    Klass *type_argument(int i)
+    {
+      Metadata *x = argument(i);
       assert(x->is_klass(), "type");
-      return (Klass*) x;
+      return (Klass *)x;
     }
 
     // The point of the whole exercise:  Is this dep still OK?
-    Klass* check_dependency() {
-      Klass* result = check_klass_dependency(NULL);
-      if (result != NULL)  return result;
+    Klass *check_dependency()
+    {
+      Klass *result = check_klass_dependency(NULL);
+      if (result != NULL)
+        return result;
       return check_call_site_dependency(NULL);
     }
 
     // A lighter version:  Checks only around recent changes in a class
     // hierarchy.  (See Universe::flush_dependents_on.)
-    Klass* spot_check_dependency_at(DepChange& changes);
+    Klass *spot_check_dependency_at(DepChange &changes);
 
     // Log the current dependency to xtty or compilation log.
-    void log_dependency(Klass* witness = NULL);
+    void log_dependency(Klass *witness = NULL);
 
     // Print the current dependency to tty.
-    void print_dependency(Klass* witness = NULL, bool verbose = false);
+    void print_dependency(Klass *witness = NULL, bool verbose = false);
   };
   friend class Dependencies::DepStream;
 
   static void print_statistics() PRODUCT_RETURN;
 };
 
-
 // Every particular DepChange is a sub-class of this class.
-class DepChange : public StackObj {
- public:
+class DepChange : public StackObj
+{
+public:
   // What kind of DepChange is this?
-  virtual bool is_klass_change()     const { return false; }
+  virtual bool is_klass_change() const { return false; }
   virtual bool is_call_site_change() const { return false; }
 
   // Subclass casting with assertions.
-  KlassDepChange*    as_klass_change() {
+  KlassDepChange *as_klass_change()
+  {
     assert(is_klass_change(), "bad cast");
-    return (KlassDepChange*) this;
+    return (KlassDepChange *)this;
   }
-  CallSiteDepChange* as_call_site_change() {
+  CallSiteDepChange *as_call_site_change()
+  {
     assert(is_call_site_change(), "bad cast");
-    return (CallSiteDepChange*) this;
+    return (CallSiteDepChange *)this;
   }
 
   void print();
 
- public:
-  enum ChangeType {
-    NO_CHANGE = 0,              // an uninvolved klass
-    Change_new_type,            // a newly loaded type
-    Change_new_sub,             // a super with a new subtype
-    Change_new_impl,            // an interface with a new implementation
+public:
+  enum ChangeType
+  {
+    NO_CHANGE = 0,   // an uninvolved klass
+    Change_new_type, // a newly loaded type
+    Change_new_sub,  // a super with a new subtype
+    Change_new_impl, // an interface with a new implementation
     CHANGE_LIMIT,
-    Start_Klass = CHANGE_LIMIT  // internal indicator for ContextStream
+    Start_Klass = CHANGE_LIMIT // internal indicator for ContextStream
   };
 
   // Usage:
@@ -585,56 +624,61 @@ class DepChange : public StackObj {
   //     ...
   //   }
   // }
-  class ContextStream : public StackObj {
-   private:
-    DepChange&  _changes;
+  class ContextStream : public StackObj
+  {
+  private:
+    DepChange &_changes;
     friend class DepChange;
 
     // iteration variables:
-    ChangeType  _change_type;
-    Klass*      _klass;
-    Array<Klass*>* _ti_base;    // i.e., transitive_interfaces
-    int         _ti_index;
-    int         _ti_limit;
+    ChangeType _change_type;
+    Klass *_klass;
+    Array<Klass *> *_ti_base; // i.e., transitive_interfaces
+    int _ti_index;
+    int _ti_limit;
 
     // start at the beginning:
     void start();
 
-   public:
-    ContextStream(DepChange& changes)
-      : _changes(changes)
-    { start(); }
+  public:
+    ContextStream(DepChange &changes)
+        : _changes(changes)
+    {
+      start();
+    }
 
-    ContextStream(DepChange& changes, No_Safepoint_Verifier& nsv)
-      : _changes(changes)
-      // the nsv argument makes it safe to hold oops like _klass
-    { start(); }
+    ContextStream(DepChange &changes, No_Safepoint_Verifier &nsv)
+        : _changes(changes)
+    // the nsv argument makes it safe to hold oops like _klass
+    {
+      start();
+    }
 
     bool next();
 
-    ChangeType change_type()     { return _change_type; }
-    Klass*     klass()           { return _klass; }
+    ChangeType change_type() { return _change_type; }
+    Klass *klass() { return _klass; }
   };
   friend class DepChange::ContextStream;
 };
-
 
 // A class hierarchy change coming through the VM (under the Compile_lock).
 // The change is structured as a single new type with any number of supers
 // and implemented interface types.  Other than the new type, any of the
 // super types can be context types for a relevant dependency, which the
 // new type could invalidate.
-class KlassDepChange : public DepChange {
- private:
+class KlassDepChange : public DepChange
+{
+private:
   // each change set is rooted in exactly one new type (at present):
   KlassHandle _new_type;
 
   void initialize();
 
- public:
+public:
   // notes the new type, marks it and all its super-types
   KlassDepChange(KlassHandle new_type)
-    : _new_type(new_type)
+      : _new_type(new_type)
   {
     initialize();
   }
@@ -645,32 +689,32 @@ class KlassDepChange : public DepChange {
   // What kind of DepChange is this?
   virtual bool is_klass_change() const { return true; }
 
-  Klass* new_type() { return _new_type(); }
+  Klass *new_type() { return _new_type(); }
 
   // involves_context(k) is true if k is new_type or any of the super types
-  bool involves_context(Klass* k);
+  bool involves_context(Klass *k);
 };
 
-
 // A CallSite has changed its target.
-class CallSiteDepChange : public DepChange {
- private:
+class CallSiteDepChange : public DepChange
+{
+private:
   Handle _call_site;
   Handle _method_handle;
 
- public:
+public:
   CallSiteDepChange(Handle call_site, Handle method_handle)
-    : _call_site(call_site),
-      _method_handle(method_handle)
+      : _call_site(call_site),
+        _method_handle(method_handle)
   {
-    assert(_call_site()    ->is_a(SystemDictionary::CallSite_klass()),     "must be");
+    assert(_call_site()->is_a(SystemDictionary::CallSite_klass()), "must be");
     assert(_method_handle()->is_a(SystemDictionary::MethodHandle_klass()), "must be");
   }
 
   // What kind of DepChange is this?
   virtual bool is_call_site_change() const { return true; }
 
-  oop call_site()     const { return _call_site();     }
+  oop call_site() const { return _call_site(); }
   oop method_handle() const { return _method_handle(); }
 };
 
