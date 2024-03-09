@@ -68,8 +68,8 @@
 // init
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 const int TEST_N = 4000;
-const int TEST_SIZE = 43;
-int test_h[TEST_SIZE] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
+const int TEST_SIZE = 73;
+int test_h[TEST_SIZE] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
 int test_ne[TEST_N], test_idx = 0;
 uintptr_t test_e[TEST_N];
 /* class level */
@@ -124,7 +124,6 @@ std::string test_method[] = {"com.ctc.wstx.stax.WstxInputFactory.createXMLStream
                              "java.io.ObjectInputStream.resolveClass(Ljava/io/ObjectStreamClass;)Ljava/lang/Class;",
                              "java.lang.ClassLoader$NativeLibrary.<init>(Ljava/lang/Class;Ljava/lang/String;Z)V",
                              "java.lang.ClassLoader.loadLibrary0(Ljava/lang/Class;Ljava/io/File;)Z",
-                             "java.nio.file.Files.newInputStream(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/InputStream;",
                              "java.lang.UNIXProcess.<init>([B[BI[BI[B[IZ)V",
                              "java.net.InetAddress.getAllByName(Ljava/lang/String;)[Ljava/net/InetAddress;",
                              "java.nio.file.Files.copy(Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;",
@@ -133,13 +132,43 @@ std::string test_method[] = {"com.ctc.wstx.stax.WstxInputFactory.createXMLStream
                              "java.nio.file.Files.delete(Ljava/nio/file/Path;)V",
                              "java.nio.file.Files.deleteIfExists(Ljava/nio/file/Path;)Z",
                              "java.nio.file.Files.move(Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;",
-                             "java.nio.file.Files.newInputStream(Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/io/InputStream;",
+                             "java.nio.file.Files.newInputStream(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/InputStream;",
                              "java.nio.file.Files.newOutputStream(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/OutputStream;",
                              "java.nio.file.Files.readAllBytes(Ljava/nio/file/Path;)[B",
                              "org.apache.catalina.connector.CoyoteAdapter.service(Lorg/apache/coyote/Request;Lorg/apache/coyote/Response;)V",
                              "org.apache.coyote.Response.doWrite(Ljava/nio/ByteBuffer;)V",
                              "org.sqlite.JDBC.connect(Ljava/lang/String;Ljava/util/Properties;)Ljava/sql/Connection;",
-                             "org.sqlite.jdbc4.JDBC4Connection.prepareStatement(Ljava/lang/String;III)Ljava/sql/PreparedStatement;"};
+                             "org.sqlite.jdbc4.JDBC4Connection.prepareStatement(Ljava/lang/String;III)Ljava/sql/PreparedStatement;",
+                             "org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Ljava/net/URI;",
+                             "org.apache.http.impl.client.CloseableHttpClient.execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/client/methods/CloseableHttpResponse;",
+                             "org.apache.http.impl.client.CloseableHttpClient.execute(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/client/methods/CloseableHttpResponse;",
+                             "org.apache.http.impl.client.CloseableHttpClient.execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;",
+                             "okhttp3.internal.http.RealInterceptorChain.proceed(Lokhttp3/Request;)Lokhttp3/Response;",
+                             "org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Lorg/xml/sax/InputSource;)V",
+                             "org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Ljava/lang/String;)V",
+                             "org.dom4j.io.SAXReader.read(Lorg/xml/sax/InputSource;)Lorg/dom4j/Document;",
+                             "org.apache.xerces.util.XMLEntityDescriptionImpl.setDescription(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+                             "org.apache.xerces.impl.XMLEntityManager.expandSystemId(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;",
+                             "ognl.OgnlParser.topLevelExpression()Lognl/Node;",
+                             "org.sqlite.jdbc3.JDBC3Statement.execute(Ljava/lang/String;)Z",
+                             "org.sqlite.jdbc3.JDBC3Statement.execute(Ljava/lang/String;I)Z",
+                             "org.sqlite.jdbc3.JDBC3Statement.execute(Ljava/lang/String;[I)Z",
+                             "org.sqlite.jdbc3.JDBC3Statement.execute(Ljava/lang/String;[Ljava/lang/String;)Z",
+                             "org.sqlite.jdbc3.JDBC3Statement.executeUpdate(Ljava/lang/String;)I",
+                             "org.sqlite.jdbc3.JDBC3Statement.executeUpdate(Ljava/lang/String;I)I",
+                             "org.sqlite.jdbc3.JDBC3Statement.executeUpdate(Ljava/lang/String;[I)I",
+                             "org.sqlite.jdbc3.JDBC3Statement.executeUpdate(Ljava/lang/String;[Ljava/lang/String;)I",
+                             "org.sqlite.jdbc3.JDBC3Statement.executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;",
+                             "org.sqlite.jdbc3.JDBC3Statement.addBatch(Ljava/lang/String;)V",
+                             "org.apache.catalina.core.ApplicationFilterChain.doFilter(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V",
+                             "org.apache.catalina.connector.OutputBuffer.close()V",
+                             "org.apache.catalina.connector.InputBuffer.read([BII)I",
+                             "org.apache.catalina.connector.CoyoteReader.read([CII)I",
+                             "org.apache.catalina.connector.Request.parseParameters()V",
+                             "com.sun.jndi.toolkit.url.GenericURLContext.lookup(Ljava/lang/String;)Ljava/lang/Object;",
+                             "sun.net.www.protocol.http.HttpURLConnection.getInputStream()Ljava/io/InputStream;",
+                             "sun.net.www.protocol.http.HttpURLConnection.followRedirect()Z",
+                             "java.io.RandomAccessFile.<init>(Ljava/io/File;Ljava/lang/String;)V"};
 // This class is the top level broker for requests from the compiler
 // to the VM.
 
@@ -1307,9 +1336,9 @@ void ciEnv::register_method(ciMethod *target,
         if (deps.type() == Dependencies::evol_method)
         {
           Method *dep_method = deps.method_argument(0);
-          // 这里面 41 对应的是待退优化的桩点数量
+          // 这里面 40 对应的是待退优化的桩点数量
           {
-            for (int i = 0; i < 41; ++i)
+            for (int i = 0; i < 70; ++i)
               if (std::strcmp(dep_method->name_and_sig_as_C_string(), test_method[i].c_str()) == 0)
               {
                 // 这里需要保证操作的原子性，否则会出现 test_idx 以及 test_h[i] 指向错乱

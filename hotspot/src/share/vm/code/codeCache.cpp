@@ -109,7 +109,6 @@ std::string test_result_method[] = {"com.ctc.wstx.stax.WstxInputFactory.createXM
                                     "java.io.ObjectInputStream.resolveClass(Ljava/io/ObjectStreamClass;)Ljava/lang/Class;",
                                     "java.lang.ClassLoader$NativeLibrary.<init>(Ljava/lang/Class;Ljava/lang/String;Z)V",
                                     "java.lang.ClassLoader.loadLibrary0(Ljava/lang/Class;Ljava/io/File;)Z",
-                                    "java.nio.file.Files.newInputStream(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/InputStream;",
                                     "java.lang.UNIXProcess.<init>([B[BI[BI[B[IZ)V",
                                     "java.net.InetAddress.getAllByName(Ljava/lang/String;)[Ljava/net/InetAddress;",
                                     "java.nio.file.Files.copy(Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;",
@@ -118,13 +117,43 @@ std::string test_result_method[] = {"com.ctc.wstx.stax.WstxInputFactory.createXM
                                     "java.nio.file.Files.delete(Ljava/nio/file/Path;)V",
                                     "java.nio.file.Files.deleteIfExists(Ljava/nio/file/Path;)Z",
                                     "java.nio.file.Files.move(Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;",
-                                    "java.nio.file.Files.newInputStream(Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/io/InputStream;",
+                                    "java.nio.file.Files.newInputStream(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/InputStream;",
                                     "java.nio.file.Files.newOutputStream(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/OutputStream;",
                                     "java.nio.file.Files.readAllBytes(Ljava/nio/file/Path;)[B",
                                     "org.apache.catalina.connector.CoyoteAdapter.service(Lorg/apache/coyote/Request;Lorg/apache/coyote/Response;)V",
                                     "org.apache.coyote.Response.doWrite(Ljava/nio/ByteBuffer;)V",
                                     "org.sqlite.JDBC.connect(Ljava/lang/String;Ljava/util/Properties;)Ljava/sql/Connection;",
-                                    "org.sqlite.jdbc4.JDBC4Connection.prepareStatement(Ljava/lang/String;III)Ljava/sql/PreparedStatement;"};
+                                    "org.sqlite.jdbc4.JDBC4Connection.prepareStatement(Ljava/lang/String;III)Ljava/sql/PreparedStatement;",
+                                    "org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Ljava/net/URI;",
+                                    "org.apache.http.impl.client.CloseableHttpClient.execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/client/methods/CloseableHttpResponse;",
+                                    "org.apache.http.impl.client.CloseableHttpClient.execute(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/client/methods/CloseableHttpResponse;",
+                                    "org.apache.http.impl.client.CloseableHttpClient.execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;",
+                                    "okhttp3.internal.http.RealInterceptorChain.proceed(Lokhttp3/Request;)Lokhttp3/Response;",
+                                    "org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Lorg/xml/sax/InputSource;)V",
+                                    "org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Ljava/lang/String;)V",
+                                    "org.dom4j.io.SAXReader.read(Lorg/xml/sax/InputSource;)Lorg/dom4j/Document;",
+                                    "org.apache.xerces.util.XMLEntityDescriptionImpl.setDescription(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+                                    "org.apache.xerces.impl.XMLEntityManager.expandSystemId(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;",
+                                    "ognl.OgnlParser.topLevelExpression()Lognl/Node;",
+                                    "org.sqlite.jdbc3.JDBC3Statement.execute(Ljava/lang/String;)Z",
+                                    "org.sqlite.jdbc3.JDBC3Statement.execute(Ljava/lang/String;I)Z",
+                                    "org.sqlite.jdbc3.JDBC3Statement.execute(Ljava/lang/String;[I)Z",
+                                    "org.sqlite.jdbc3.JDBC3Statement.execute(Ljava/lang/String;[Ljava/lang/String;)Z",
+                                    "org.sqlite.jdbc3.JDBC3Statement.executeUpdate(Ljava/lang/String;)I",
+                                    "org.sqlite.jdbc3.JDBC3Statement.executeUpdate(Ljava/lang/String;I)I",
+                                    "org.sqlite.jdbc3.JDBC3Statement.executeUpdate(Ljava/lang/String;[I)I",
+                                    "org.sqlite.jdbc3.JDBC3Statement.executeUpdate(Ljava/lang/String;[Ljava/lang/String;)I",
+                                    "org.sqlite.jdbc3.JDBC3Statement.executeQuery(Ljava/lang/String;)Ljava/sql/ResultSet;",
+                                    "org.sqlite.jdbc3.JDBC3Statement.addBatch(Ljava/lang/String;)V",
+                                    "org.apache.catalina.core.ApplicationFilterChain.doFilter(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V",
+                                    "org.apache.catalina.connector.OutputBuffer.close()V",
+                                    "org.apache.catalina.connector.InputBuffer.read([BII)I",
+                                    "org.apache.catalina.connector.CoyoteReader.read([CII)I",
+                                    "org.apache.catalina.connector.Request.parseParameters()V",
+                                    "com.sun.jndi.toolkit.url.GenericURLContext.lookup(Ljava/lang/String;)Ljava/lang/Object;",
+                                    "sun.net.www.protocol.http.HttpURLConnection.getInputStream()Ljava/io/InputStream;",
+                                    "sun.net.www.protocol.http.HttpURLConnection.followRedirect()Z",
+                                    "java.io.RandomAccessFile.<init>(Ljava/io/File;Ljava/lang/String;)V"};
 // Helper class for printing in CodeCache
 
 class CodeBlob_sizes
@@ -909,12 +938,11 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
 {
   MutexLockerEx mu(CodeCache_lock, Mutex::_no_safepoint_check_flag);
   int number_of_marked_CodeBlobs = 0;
-  // printf("[*] CodeCache::mark_for_evol_deoptimization\n");
 
   // memset(h, -1, sizeof h);
   // idx = 0;
-  const char *redefineClass;
-
+  // const char *redefineClass;
+  // printf("[debug] %s\n", dependee->external_name());
   // Deoptimize all methods of the evolving class itself
   Array<Method *> *old_methods = dependee->methods();
   for (int i = 0; i < old_methods->length(); i++)
@@ -923,14 +951,13 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
     Method *old_method = old_methods->at(i);
 
     // do method-level deoptimization
-    for (int j = 0; j < 41; ++j)
+    for (int j = 0; j < 70; ++j)
     {
       if (std::strcmp(old_method->name_and_sig_as_C_string(), test_result_method[j].c_str()) == 0)
       {
         nmethod *nm = old_method->code();
         if (nm != NULL)
         {
-          // printf("[debug1] %s\n", old_method->name_and_sig_as_C_string());
           nm->mark_for_deoptimization();
           number_of_marked_CodeBlobs++;
         }
@@ -943,13 +970,16 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
           ResourceMark rm;
           if (typeid(*test_dep) == typeid(Method) && nm_dep != NULL && !nm_dep->is_marked_for_deoptimization())
           {
-            // printf("[debug1] %s\n", test_dep->name_and_sig_as_C_string());
+            // printf("[debug1] %s - %s - %s\n", old_method->method_holder()->external_name(),
+            //        old_method->name_and_sig_as_C_string(),
+            //        test_dep->name_and_sig_as_C_string());
             nm_dep->mark_for_deoptimization();
             number_of_marked_CodeBlobs++;
           }
         }
         // 也许需要加锁 reset
         test_h[j] = -1;
+        break;
       }
     }
   }
@@ -974,7 +1004,7 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
   //         number_of_marked_CodeBlobs++;
   //       }
   //     }
-  //     // TODO: 也许需要加锁 reset
+  //     // 也许需要加锁 reset
   //     test_h[j] = -1;
   //     break;
   //   }
