@@ -68,8 +68,8 @@
 // init
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 const int TEST_N = 4000;
-const int TEST_SIZE = 73;
-int test_h[TEST_SIZE] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
+const int TEST_SIZE = 76;
+int test_h[] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
 int test_ne[TEST_N], test_idx = 0;
 uintptr_t test_e[TEST_N];
 /* class level */
@@ -137,6 +137,7 @@ std::string test_method[] = {"com.ctc.wstx.stax.WstxInputFactory.createXMLStream
                              "java.nio.file.Files.readAllBytes(Ljava/nio/file/Path;)[B",
                              "org.apache.catalina.connector.CoyoteAdapter.service(Lorg/apache/coyote/Request;Lorg/apache/coyote/Response;)V",
                              "org.apache.coyote.Response.doWrite(Ljava/nio/ByteBuffer;)V",
+                             "org.apache.coyote.Response.doWrite(Lorg/apache/tomcat/util/buf/ByteChunk;)V",
                              "org.sqlite.JDBC.connect(Ljava/lang/String;Ljava/util/Properties;)Ljava/sql/Connection;",
                              "org.sqlite.jdbc4.JDBC4Connection.prepareStatement(Ljava/lang/String;III)Ljava/sql/PreparedStatement;",
                              "org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Ljava/net/URI;",
@@ -147,6 +148,8 @@ std::string test_method[] = {"com.ctc.wstx.stax.WstxInputFactory.createXMLStream
                              "org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Lorg/xml/sax/InputSource;)V",
                              "org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Ljava/lang/String;)V",
                              "org.dom4j.io.SAXReader.read(Lorg/xml/sax/InputSource;)Lorg/dom4j/Document;",
+                             "org.dom4j.io.SAXReader.read(Ljava/io/Reader;)Lorg/dom4j/Document;",
+                             "com.ctc.wstx.sr.StreamScanner.expandEntity(Lcom/ctc/wstx/ent/EntityDecl;Z)V",
                              "org.apache.xerces.util.XMLEntityDescriptionImpl.setDescription(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
                              "org.apache.xerces.impl.XMLEntityManager.expandSystemId(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;",
                              "ognl.OgnlParser.topLevelExpression()Lognl/Node;",
@@ -163,6 +166,7 @@ std::string test_method[] = {"com.ctc.wstx.stax.WstxInputFactory.createXMLStream
                              "org.apache.catalina.core.ApplicationFilterChain.doFilter(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V",
                              "org.apache.catalina.connector.OutputBuffer.close()V",
                              "org.apache.catalina.connector.InputBuffer.read([BII)I",
+                             "org.apache.catalina.connector.InputBuffer.readByte()I",
                              "org.apache.catalina.connector.CoyoteReader.read([CII)I",
                              "org.apache.catalina.connector.Request.parseParameters()V",
                              "com.sun.jndi.toolkit.url.GenericURLContext.lookup(Ljava/lang/String;)Ljava/lang/Object;",
@@ -1336,9 +1340,9 @@ void ciEnv::register_method(ciMethod *target,
         if (deps.type() == Dependencies::evol_method)
         {
           Method *dep_method = deps.method_argument(0);
-          // 这里面 40 对应的是待退优化的桩点数量
+          // 这里面 74 对应的是待退优化的桩点数量
           {
-            for (int i = 0; i < 70; ++i)
+            for (int i = 0; i < 74; ++i)
               if (std::strcmp(dep_method->name_and_sig_as_C_string(), test_method[i].c_str()) == 0)
               {
                 // 这里需要保证操作的原子性，否则会出现 test_idx 以及 test_h[i] 指向错乱

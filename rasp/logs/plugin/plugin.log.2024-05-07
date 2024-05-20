@@ -1,0 +1,399 @@
+2024-05-07 00:03:34,883 INFO  [Attach Listener][com.baidu.openrasp.plugin.js.log] [official] OpenRASP official plugin: Initialized, version 2022-0616-0730
+2024-05-07 00:03:38,108 INFO  [http-nio-8002-exec-1][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/mvel.do <native code>:0
+url=https%3A%2F%2Fwww.baidu.com
+SyntaxError: Unexpected token u in JSON at position 0
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2078:29)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:03:38,117 INFO  [http-nio-8002-exec-48][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/mvel.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:03:38,173 INFO  [http-nio-8002-exec-8][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/okHttp3.do <native code>:0
+"name": "test"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2294:29)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:03:39,152 INFO  [http-nio-8002-exec-57][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:03:39,243 INFO  [http-nio-8002-exec-60][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:03:39,397 INFO  [http-nio-8002-exec-40][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/header/httpConnection.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:03:40,021 INFO  [http-nio-8002-exec-20][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/okHttp3.do <native code>:0
+----------------------------546513109898670817303556
+SyntaxError: Unexpected number in JSON at position 1
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2133:29)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:03:41,946 INFO  [http-nio-8002-exec-5][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpClient.do <native code>:0
+    "xml": "<map><entry><jdk.nashorn.internal.objects.NativeString><flags>0</flags><value class='com.sun.xml.internal.bind.v2.runtime.unmarshaller.Base64Data'><dataHandler><dataSource class='com.sun.xml.internal.ws.encoding.xml.XMLMessage$XmlDataSource'><contentType>text/plain</contentType><is class='java.io.SequenceInputStream'><e class='javax.swing.MultiUIDefaults$MultiUIDefaultsEnumerator'><iterator class='javax.imageio.spi.FilterIterator'><iter class='java.util.ArrayList$Itr'><cursor>0</cursor><lastRet>-1</lastRet><expectedModCount>1</expectedModCount><outer-class><java.lang.ProcessBuilder><command><string>curl</string><string>127.0.0.1:8888</string></command></java.lang.ProcessBuilder></outer-class></iter><filter class='javax.imageio.ImageIO$ContainsFilter'><method><class>java.lang.ProcessBuilder</class><name>start</name><parameter-types/></method><name>start</name></filter><next/></iterator><type>KEYS</type></e><in class='java.io.ByteArrayInputStream'><buf></buf><pos>0</pos><mark>0</mark><count>0</count></in></is><consumed>false</consumed></dataSource><transferFlavors/></dataHandler><dataLen>0</dataLen></value></jdk.nashorn.internal.objects.NativeString><string>test</string></entry></map>"
+SyntaxError: Unexpected token : in JSON at position 10
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2294:29)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:03:44,862 INFO  [http-nio-8002-exec-65][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:03:44,899 INFO  [http-nio-8002-exec-40][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:03:44,934 INFO  [http-nio-8002-exec-59][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:03:45,726 INFO  [http-nio-8002-exec-20][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+----------------------------546513109898670817303556
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:03:53,095 INFO  [http-nio-8002-exec-25][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:03:53,096 INFO  [http-nio-8002-exec-65][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:03:58,514 INFO  [http-nio-8002-exec-66][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/okHttp3.do <native code>:0
+----------------------------495039911611566899147778
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:00,463 INFO  [http-nio-8002-exec-50][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:00,507 INFO  [http-nio-8002-exec-29][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:06,106 INFO  [http-nio-8002-exec-66][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Deserialization/readObject.do <native code>:0
+----------------------------495039911611566899147778
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:06,710 INFO  [http-nio-8002-exec-23][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:07,925 INFO  [http-nio-8002-exec-39][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/randomAccessFileReadFile.do <native code>:0
+----------------------------346579207972737669895963
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:08,307 INFO  [http-nio-8002-exec-17][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:08,373 INFO  [http-nio-8002-exec-50][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:10,353 INFO  [http-nio-8002-exec-39][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+----------------------------346579207972737669895963
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:13,395 INFO  [http-nio-8002-exec-50][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:16,500 INFO  [http-nio-8002-exec-26][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpClient.do <native code>:0
+document><root><url>https://www.baidu.com</url></root></document>
+SyntaxError: Unexpected token d in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:18,270 INFO  [http-nio-8002-exec-62][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpConnection.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:18,325 INFO  [http-nio-8002-exec-33][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:20,500 INFO  [http-nio-8002-exec-32][com.baidu.openrasp.plugin.js.log] <native code>:0
+"root":{"xml":"<!DOCTYPE test [<!ELEMENT test ANY ><!ENTITY title SYSTEM 'file:///usr' >]><article><title>&title;</title></article>"}}"name": "test"}----------------------------910763037570135953851214
+SyntaxError: Unexpected token : in JSON at position 6
+    at Object.func (official.js:1675:39)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:24,562 INFO  [http-nio-8002-exec-13][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:30,193 INFO  [http-nio-8002-exec-26][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:30,251 INFO  [http-nio-8002-exec-41][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:41,298 INFO  [http-nio-8002-exec-28][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:43,320 INFO  [http-nio-8002-exec-25][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:43,337 INFO  [http-nio-8002-exec-66][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+----------------------------495039911611566899147778
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:43,395 INFO  [http-nio-8002-exec-15][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:47,096 INFO  [http-nio-8002-exec-20][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+----------------------------546513109898670817303556
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:48,284 INFO  [http-nio-8002-exec-63][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/get/okHttp3.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:51,131 INFO  [http-nio-8002-exec-34][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:51,224 INFO  [http-nio-8002-exec-15][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:51,719 INFO  [http-nio-8002-exec-26][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/okHttp3.do <native code>:0
+document><root><url>https://www.baidu.com</url></root></document>exp=function%20test%28%29%7B%20return%20java.util.Arrays.toString%28new%0Ajava.io.File%28%27%2Fusr%27%29.list%28%29%29%7D%3Btest%28%29%3B
+SyntaxError: Unexpected token d in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:04:56,756 INFO  [http-nio-8002-exec-43][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/xml/httpClient.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:05:01,582 INFO  [http-nio-8002-exec-24][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:05:01,638 INFO  [http-nio-8002-exec-8][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:05:13,841 INFO  [http-nio-8002-exec-35][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:05:18,307 INFO  [http-nio-8002-exec-35][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:05:18,358 INFO  [http-nio-8002-exec-41][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:05:21,219 INFO  [http-nio-8002-exec-33][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:05:24,047 INFO  [http-nio-8002-exec-37][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/okHttp3.do <native code>:0
+"name": "test"}document><root><url>https://www.baidu.com</url></root></document>file=.%2F1.txt"root": {"url":"https://www.baidu.com"}}----------------------------477735433704550623954023
+SyntaxError: Unexpected token : in JSON at position 6
+    at Object.func (official.js:1675:39)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:05:24,651 INFO  [http-nio-8002-exec-43][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/ongl.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:05:24,705 INFO  [http-nio-8002-exec-57][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:05:27,639 INFO  [http-nio-8002-exec-26][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+document><root><url>https://www.baidu.com</url></root></document>exp=function%20test%28%29%7B%20return%20java.util.Arrays.toString%28new%0Ajava.io.File%28%27%2Fusr%27%29.list%28%29%29%7D%3Btest%28%29%3Broot><file>1.txt</file><dest>1.jsp</dest></root>"root":{"xml":"<!DOCTYPE test [<!ELEMENT test ANY ><!ENTITY title SYSTEM 'file:///usr' >]><article><title>&title;</title></article>"}}
+SyntaxError: Unexpected token d in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:05:28,799 INFO  [http-nio-8002-exec-66][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/okHttp3.do <native code>:0
+----------------------------495039911611566899147778
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:05:29,458 INFO  [http-nio-8002-exec-52][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:05:33,443 INFO  [http-nio-8002-exec-39][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/cookie/okHttp3.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 00:05:33,497 INFO  [http-nio-8002-exec-57][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 20:24:26,193 INFO  [Attach Listener][com.baidu.openrasp.plugin.js.log] [official] OpenRASP official plugin: Initialized, version 2022-0616-0730
+2024-05-07 20:24:30,335 INFO  [http-nio-8002-exec-25][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/post/httpConnection.do Javascript plugin execution timeout
+2024-05-07 20:24:50,063 INFO  [http-nio-8002-exec-57][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SQL/cookie/sql.do Javascript plugin execution timeout
+2024-05-07 20:24:51,066 INFO  [http-nio-8002-exec-7][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/ongl.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 20:24:51,168 INFO  [http-nio-8002-exec-124][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/spEL.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 20:24:51,229 INFO  [http-nio-8002-exec-24][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/mvel.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 20:24:53,243 INFO  [http-nio-8002-exec-97][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/mvel.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 20:25:20,374 INFO  [http-nio-8002-exec-114][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/ongl.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 20:25:20,514 INFO  [http-nio-8002-exec-74][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/spEL.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 20:25:20,586 INFO  [http-nio-8002-exec-94][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/mvel.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 20:25:51,701 INFO  [http-nio-8002-exec-41][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/ongl.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 20:25:51,759 INFO  [http-nio-8002-exec-32][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/spEL.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 20:25:51,808 INFO  [http-nio-8002-exec-40][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/mvel.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 20:26:20,385 INFO  [http-nio-8002-exec-69][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/ongl.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 20:26:20,423 INFO  [http-nio-8002-exec-24][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/spEL.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-07 20:26:20,496 INFO  [http-nio-8002-exec-128][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/mvel.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)

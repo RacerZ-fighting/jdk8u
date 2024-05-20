@@ -3,7 +3,7 @@
 # Function to start the commands in the background
 start_commands() {
             # Start the first command and store its process ID
-                taskset -c 2 java -Xbootclasspath/a:/home/racerz/openjdk8/tools.jar -jar agent-tool1.jar &
+                taskset -c 6 java -Xbootclasspath/a:/home/racerz/openjdk8/tools.jar -jar agent-tool1.jar &
                 PID1=$!
             # Start the second command in the background
                 nohup watch -n 0.5 "sh cpu.sh >> logs/cpu.log" &

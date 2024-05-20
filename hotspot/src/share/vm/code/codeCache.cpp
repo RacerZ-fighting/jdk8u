@@ -122,6 +122,7 @@ std::string test_result_method[] = {"com.ctc.wstx.stax.WstxInputFactory.createXM
                                     "java.nio.file.Files.readAllBytes(Ljava/nio/file/Path;)[B",
                                     "org.apache.catalina.connector.CoyoteAdapter.service(Lorg/apache/coyote/Request;Lorg/apache/coyote/Response;)V",
                                     "org.apache.coyote.Response.doWrite(Ljava/nio/ByteBuffer;)V",
+                                    "org.apache.coyote.Response.doWrite(Lorg/apache/tomcat/util/buf/ByteChunk;)V",
                                     "org.sqlite.JDBC.connect(Ljava/lang/String;Ljava/util/Properties;)Ljava/sql/Connection;",
                                     "org.sqlite.jdbc4.JDBC4Connection.prepareStatement(Ljava/lang/String;III)Ljava/sql/PreparedStatement;",
                                     "org.apache.http.impl.client.DefaultRedirectStrategy.getLocationURI(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Ljava/net/URI;",
@@ -132,6 +133,8 @@ std::string test_result_method[] = {"com.ctc.wstx.stax.WstxInputFactory.createXM
                                     "org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Lorg/xml/sax/InputSource;)V",
                                     "org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Ljava/lang/String;)V",
                                     "org.dom4j.io.SAXReader.read(Lorg/xml/sax/InputSource;)Lorg/dom4j/Document;",
+                                    "org.dom4j.io.SAXReader.read(Ljava/io/Reader;)Lorg/dom4j/Document;",
+                                    "com.ctc.wstx.sr.StreamScanner.expandEntity(Lcom/ctc/wstx/ent/EntityDecl;Z)V",
                                     "org.apache.xerces.util.XMLEntityDescriptionImpl.setDescription(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
                                     "org.apache.xerces.impl.XMLEntityManager.expandSystemId(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;",
                                     "ognl.OgnlParser.topLevelExpression()Lognl/Node;",
@@ -148,6 +151,7 @@ std::string test_result_method[] = {"com.ctc.wstx.stax.WstxInputFactory.createXM
                                     "org.apache.catalina.core.ApplicationFilterChain.doFilter(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V",
                                     "org.apache.catalina.connector.OutputBuffer.close()V",
                                     "org.apache.catalina.connector.InputBuffer.read([BII)I",
+                                    "org.apache.catalina.connector.InputBuffer.readByte()I",
                                     "org.apache.catalina.connector.CoyoteReader.read([CII)I",
                                     "org.apache.catalina.connector.Request.parseParameters()V",
                                     "com.sun.jndi.toolkit.url.GenericURLContext.lookup(Ljava/lang/String;)Ljava/lang/Object;",
@@ -951,7 +955,7 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
     Method *old_method = old_methods->at(i);
 
     // do method-level deoptimization
-    for (int j = 0; j < 70; ++j)
+    for (int j = 0; j < 74; ++j)
     {
       if (std::strcmp(old_method->name_and_sig_as_C_string(), test_result_method[j].c_str()) == 0)
       {
@@ -970,9 +974,6 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
           ResourceMark rm;
           if (typeid(*test_dep) == typeid(Method) && nm_dep != NULL && !nm_dep->is_marked_for_deoptimization())
           {
-            // printf("[debug1] %s - %s - %s\n", old_method->method_holder()->external_name(),
-            //        old_method->name_and_sig_as_C_string(),
-            //        test_dep->name_and_sig_as_C_string());
             nm_dep->mark_for_deoptimization();
             number_of_marked_CodeBlobs++;
           }
@@ -1010,7 +1011,6 @@ int CodeCache::mark_for_evol_deoptimization(instanceKlassHandle dependee)
   //   }
   // }
 
-  // TODO: 这里虽然全部注释掉，也要考虑内联如何处理
   // FOR_ALL_ALIVE_NMETHODS(nm)
   // {
   //   if (nm->is_marked_for_deoptimization())
